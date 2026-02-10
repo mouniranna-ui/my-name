@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Site Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Random Site Builder</h1>
+        <p>Create quick random website concepts you can start building right away.</p>
+      </header>
+
+      <section class="controls">
+        <label for="count">How many ideas?</label>
+        <input id="count" type="number" min="1" max="12" value="3" />
+        <button id="generate">Build Random Sites</button>
+      </section>
+
+      <section>
+        <h2>Generated Concepts</h2>
+        <div id="ideas" class="ideas" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <template id="idea-template">
+      <article class="card">
+        <h3 class="name"></h3>
+        <p class="tagline"></p>
+        <ul class="meta"></ul>
+      </article>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
