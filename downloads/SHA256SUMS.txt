@@ -1,0 +1,3 @@
+a972696101104c38fc791759ab2154ca8e59c37b27bc053c4a7fa713f92e9470  photo-to-autocad-source-1.0.0.zip
+3e3bdaafc75ce37883820a6dcff534f3d9ba0ac85fdde659afa3a6049b2d0c8b  photo-to-autocad-plugin-1.0.0.zip
+0da73758114a1b0ec060f0d34dc00ea5d01d3e2b4318017b916d278f4b78ac22  photo-to-autocad-skill-1.0.0.zip

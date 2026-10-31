@@ -1,0 +1,8 @@
+interface:
+  display_name: "Photo to AutoCAD"
+  short_description: "Turn drawing photos into editable, dimensioned CAD"
+  icon_small: "./assets/photo-to-autocad.png"
+  icon_large: "./assets/photo-to-autocad.png"
+  default_prompt: "Use $draft-cad-from-images to redraw my technical drawing images as editable CAD with verified dimensions and a PDF preview."
+policy:
+  allow_implicit_invocation: true

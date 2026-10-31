@@ -1,0 +1,1 @@
+-r plugins/photo-to-autocad/skills/draft-cad-from-images/scripts/requirements.txt

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="510" viewBox="0 0 1440 510" role="img" aria-label="GEMINI · CLI OR GEM">
+<rect width="1440" height="510" rx="28" fill="#101a2c"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="60" y="76" fill="#ffffff" font-size="35" font-weight="700">GEMINI · CLI OR GEM</text>
+<text x="60" y="118" fill="#bdcce0" font-size="21">Use the native skill in Gemini CLI, or the instruction adapter in a Gemini Gem.</text>
+<rect x="60" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="100" cy="211" r="20" fill="#4ce2ba"/>
+<text x="100" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">1</text>
+<text x="85" y="264" fill="#ffffff" font-size="23" font-weight="700">Download</text>
+<text x="85" y="303" fill="#d4e0ed" font-size="18">Get the repository ZIP</text>
+<text x="85" y="332" fill="#d4e0ed" font-size="18">Extract the files</text>
+<text x="85" y="361" fill="#d4e0ed" font-size="18">Read the Gemini guide</text>
+<path d="M369 290 h22 m-7 -7 l7 7 -7 7" fill="none" stroke="#4ce2ba" stroke-width="3"/>
+<rect x="400" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="440" cy="211" r="20" fill="#4ce2ba"/>
+<text x="440" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">2</text>
+<text x="425" y="264" fill="#ffffff" font-size="23" font-weight="700">Gemini CLI</text>
+<text x="425" y="303" fill="#d4e0ed" font-size="18">python tools/install_skill.py</text>
+<text x="425" y="332" fill="#d4e0ed" font-size="18">--target gemini</text>
+<text x="425" y="361" fill="#d4e0ed" font-size="18">Reload skills / new session</text>
+<path d="M709 290 h22 m-7 -7 l7 7 -7 7" fill="none" stroke="#4ce2ba" stroke-width="3"/>
+<rect x="740" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="780" cy="211" r="20" fill="#4ce2ba"/>
+<text x="780" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">3</text>
+<text x="765" y="264" fill="#ffffff" font-size="23" font-weight="700">Gemini app</text>
+<text x="765" y="303" fill="#d4e0ed" font-size="18">Explore Gems → New Gem</text>
+<text x="765" y="332" fill="#d4e0ed" font-size="18">Paste the Gem instructions</text>
+<text x="765" y="361" fill="#d4e0ed" font-size="18">Add knowledge, then Save</text>
+<path d="M1049 290 h22 m-7 -7 l7 7 -7 7" fill="none" stroke="#4ce2ba" stroke-width="3"/>
+<rect x="1080" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="1120" cy="211" r="20" fill="#4ce2ba"/>
+<text x="1120" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">4</text>
+<text x="1105" y="264" fill="#ffffff" font-size="23" font-weight="700">Give your drawing</text>
+<text x="1105" y="303" fill="#d4e0ed" font-size="18">Attach a clear source</text>
+<text x="1105" y="332" fill="#d4e0ed" font-size="18">Ask for the source ledger</text>
+<text x="1105" y="361" fill="#d4e0ed" font-size="18">Generate files if supported</text>
+<text x="60" y="465" fill="#a9bfd5" font-size="18">The Gem adapter does not install a CLI skill or guarantee Python execution. Platform permissions still apply.</text>
+</g></svg>

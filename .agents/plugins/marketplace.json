@@ -1,0 +1,20 @@
+{
+  "name": "photo-to-autocad",
+  "interface": {
+    "displayName": "Photo to AutoCAD"
+  },
+  "plugins": [
+    {
+      "name": "photo-to-autocad",
+      "source": {
+        "source": "local",
+        "path": "./plugins/photo-to-autocad"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

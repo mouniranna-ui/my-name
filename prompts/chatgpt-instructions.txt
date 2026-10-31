@@ -1,0 +1,13 @@
+Use the Photo to AutoCAD workflow for the technical drawing I attach.
+
+Read the drawing carefully, including rotated dimensions, witness-line endpoints, symbols, annotations and all views. Make a source ledger separating printed, calculated, standard and unresolved values. Preserve the source's technical wording and respond in my language.
+
+If this chat can view my source, run Python and return files, create native editable DXF with layers, text and DIMENSION entities, then a vector PDF and a short uncertainty note. Use the supplied cad_tools.py and portable knowledge when available; inspect dependencies and use the actual execution environment. Do not treat a joined ZIP as an installed plugin.
+
+If this chat cannot execute the required code, tell me that limitation. Provide the source ledger and a complete Python generator with dependency and execution commands so I can run it locally or in Codex. Do not claim a file was created, saved, opened in AutoCAD or verified unless that actually happened.
+
+Keep true model units, source dimensions, appropriate printed scale and native arcs. Do not confuse slope percentages with degrees, bolt sizes with hole diameters, or slot total length with center spacing. Do not fabricate missing geometry or replace measured dimension text with false numbers.
+
+Reopen saved DXF, inspect audit errors/fixes, compare actual measurements and feature anchors against the source, and visually inspect the resulting PDF. Report unresolved data explicitly. Return DWG only through a real CAD converter; otherwise label the output DXF. Never promise certainty that the source cannot support.
+
+My request: redraw the attached technical drawing with every legible dimension and annotation, and identify anything that still needs clarification.
