@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.1.1 — 2026-10-31
+
+- Record the publisher-selected name exactly as owen a.
+- Declare free use without commerce and target all supported countries.
+- Distinguish supplied publisher metadata from completed identity verification.
+- Preserve current plugin, GPT compatibility and CAD behavior.
+
 ## 2.1.0 — 2026-10-31
 
 - Add a GPT compatibility ZIP with English instructions, configuration, knowledge, icon and six prepared preview cases.

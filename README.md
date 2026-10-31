@@ -4,6 +4,8 @@
 
 **From technical drawings to editable CAD.**
 
+Publisher: **owen a** · **Free** · Intended availability: **all supported countries**
+
 An open drafting workflow for students, technicians and detailers. Read a drawing, reconstruct native geometry, verify its dimensions and deliver a clean CAD file with a printable PDF.
 
 [ChatGPT plugin](docs/INSTALL_CHATGPT.md) · [GPT setup](docs/CUSTOM_GPT.md) · [Start in ChatGPT](docs/CHATGPT_START.md) · [Install in Codex](docs/INSTALL_CODEX.md) · [Use Gemini](docs/INSTALL_GEMINI.md) · [Documentation](docs/README.md)
@@ -52,15 +54,15 @@ A reproducible **24 m × 36 m educational workshop study**, with seven frame lin
 
 The drawings are generated from a published synthetic specification. They include real CAD geometry and native dimensions, with saved-file audit results. The previews are rendered from the DXF files. They are not AutoCAD screenshots, a client reference or proof of structural adequacy. Member sizing, loads, material grades, plate thicknesses, bolts, welds and foundations are outside this example.
 
-## Download version 2.1.0
+## Download version 2.1.1
 
 | Package | Choose it when |
 | --- | --- |
-| [Complete project ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-source-2.1.0.zip) | You want the documentation, installer, scripts and examples |
-| [Standalone skill ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-skill-2.1.0.zip) | You want to install the skill manually |
-| [Plugin ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-plugin-2.1.0.zip) | Your environment supports plugin package ingestion |
+| [Complete project ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-source-2.1.1.zip) | You want the documentation, installer, scripts and examples |
+| [Standalone skill ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-skill-2.1.1.zip) | You want to install the skill manually |
+| [Plugin ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-plugin-2.1.1.zip) | Your environment supports plugin package ingestion |
 | [Single ChatGPT TXT](prompts/TSBECM-202-ChatGPT.txt) | You want to attach the workflow and helper source to a chat |
-| [GPT configuration ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-gpt-2.1.0.zip) | You can edit an existing GPT or create one in an eligible workspace |
+| [GPT configuration ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-gpt-2.1.1.zip) | You can edit an existing GPT or create one in an eligible workspace |
 | [SHA-256 checksums](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/SHA256SUMS.txt) | You want to verify the archive bytes |
 
 Use the download button on each GitHub file page. For **Code → Download ZIP**, keep the `photo-to-autocad` branch selected; this branch contains the project. The repository URL is a hosting address, while **TSBECM 202** is the project and plugin name.

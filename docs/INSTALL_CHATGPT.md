@@ -16,7 +16,7 @@
 
 ## Save the plugin inside ChatGPT
 
-1. Download the [TSBECM 202 plugin ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-plugin-2.1.0.zip). Keep the ZIP intact; it contains root `plugin.json` and the drafting skill.
+1. Download the [TSBECM 202 plugin ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-plugin-2.1.1.zip). Keep the ZIP intact; it contains root `plugin.json` and the drafting skill.
 2. In ChatGPT, start a conversation and select **Plugin Creator** from the `@` menu. Use the account/workspace where the plugin should live.
 3. Attach the plugin ZIP and paste [the prepared creation request](../prompts/create-chatgpt-plugin.txt). It asks Plugin Creator to reuse the package, check for an existing owned plugin, save the intended plugin and return its real link.
 4. Confirm that the saved product is named **TSBECM 202** and includes **draft-cad-from-images**. A generated ZIP, a local marketplace entry or a response saying "ready" is not proof of account installation. If the save capability is unavailable, preserve the ZIP and keep installation pending.

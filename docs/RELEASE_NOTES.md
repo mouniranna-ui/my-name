@@ -1,9 +1,7 @@
-# TSBECM 202 2.1.0
+# TSBECM 202 2.1.1
 
-This release adds a manual GPT compatibility kit and a detailed ChatGPT account-plugin setup guide. The GPT ZIP includes English instructions, field configuration, the complete knowledge attachment, the existing icon and six prepared preview cases. These cases have not been executed inside a saved GPT.
+This metadata release records the creator's confirmed choices: publisher-selected name **owen a**, a **free** workflow without payments or purchases, and availability in **all supported countries**. The plugin manifest contains the author/developer name, an explicit false commerce declaration and an empty country allowlist meaning no publisher country restrictions.
 
-OpenAI currently restricts new GPT creation on personal accounts. The configuration kit is intended for an existing editable GPT or an eligible managed workspace. It does not create a GPT, an account plugin or a public link.
+Publisher identity verification remains pending. The supplied name is not proof of verification, and platform availability rules still apply. The service's free status does not include third-party platform plans or AutoCAD licences.
 
-The portable skills-only plugin is prepared for account ingestion. Its account save and live installation test are still pending because the save capability was unavailable. Public-directory submission also remains pending publisher details and review. The included setup request explains how to reuse the package without creating duplicates.
-
-The drafting skill, CAD helper behavior and synthetic industrial workshop example remain unchanged. All active project documentation remains English.
+The drafting skill, Python helpers, GPT compatibility kit and public examples are unchanged. Account-plugin saving, GPT creation/editing and public-directory submission/publication are still not completed. Outstanding policy decisions and required portal checks are tracked in PLUGIN_PUBLICATION.md.
