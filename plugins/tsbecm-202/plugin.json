@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "tsbecm-202",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Convert technical drawing images into editable, dimensioned CAD with checked PDF previews.",
   "keywords": [
     "cad",
@@ -37,7 +37,7 @@
         ]
       },
       "publication": {
-        "release_notes": "Rebranded as TSBECM 202. Reorganized English documentation, detailed platform guides and a reproducible industrial workshop drafting example with CAD drawings, PDF sheets and numerical verification."
+        "release_notes": "Adds a manual GPT compatibility kit with instructions, knowledge, profile icon and preview cases, plus a precise ChatGPT account-plugin setup guide. Documents current GPT creation eligibility. CAD workflow behavior is unchanged."
       }
     }
   },

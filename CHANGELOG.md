@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.0 — 2026-10-31
+
+- Add a GPT compatibility ZIP with English instructions, configuration, knowledge, icon and six prepared preview cases.
+- Document current GPT creation limits and existing-GPT editing separately from plugin setup.
+- Add an account-plugin creation request and an explicit save/test walkthrough.
+- Preserve the drafting skill, CAD helpers and existing public examples.
+- Account-plugin saving, GPT editing and public directory publication remain uncompleted.
+
 ## 2.0.0 — 2026-10-31
 
 - Rebrand the project and portable plugin as TSBECM 202.

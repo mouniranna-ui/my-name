@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build portable source, skill and plugin archives; no upload or publication."""
+"""Build source, skill, plugin and GPT configuration archives; no publication."""
 from __future__ import annotations
 import argparse
 import hashlib
@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PLUGIN = ROOT / "plugins/tsbecm-202"
 SKILL = PLUGIN / "skills/draft-cad-from-images"
 ROOT_FILES = {"README.md", "README.en.md", "README.fr.md", "LICENSE", "NOTICE.md", "CHANGELOG.md", "VERSION", "requirements.txt", "requirements-dev.txt", ".gitignore", ".gitattributes"}
-ROOT_DIRS = {"plugins", "tools", "tests", "docs", "prompts", "examples", ".agents", ".github"}
+ROOT_DIRS = {"plugins", "tools", "tests", "docs", "prompts", "examples", "gpt", ".agents", ".github"}
 
 
 def files_under(root):
@@ -60,6 +60,12 @@ def build(output):
         f"tsbecm-202-source-{version}.zip": source_files,
         f"tsbecm-202-plugin-{version}.zip": [(p, p.relative_to(PLUGIN).as_posix()) for p in files_under(PLUGIN)],
         f"tsbecm-202-skill-{version}.zip": [(p, "draft-cad-from-images/" + p.relative_to(SKILL).as_posix()) for p in files_under(SKILL)],
+        f"tsbecm-202-gpt-{version}.zip": (
+            [(p, p.name) for p in files_under(ROOT / "gpt")]
+            + [(ROOT / "prompts/TSBECM-202-ChatGPT.txt", "TSBECM-202-ChatGPT.txt"),
+               (SKILL / "assets/photo-to-autocad.png", "icon.png"),
+               (ROOT / "LICENSE", "LICENSE"), (ROOT / "NOTICE.md", "NOTICE.md")]
+        ),
     }
     for name, files in targets.items():
         write_zip(output / name, files)

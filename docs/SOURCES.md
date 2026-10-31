@@ -11,6 +11,10 @@ OpenAI workflow and publication guidance was checked on **2026-10-31**. Gemini r
 | Portable packages and local marketplaces | [OpenAI: Package your plugin](https://developers.openai.com/plugins/build/plugins) |
 | Skills and plugins | [OpenAI: Skills & Plugins](https://learn.chatgpt.com/docs/skills-and-plugins) |
 | Publisher identity, review and release | [OpenAI: Submit plugins](https://developers.openai.com/plugins/deploy/submission) |
+| Conversational plugin creation | [OpenAI: Build plugins](https://learn.chatgpt.com/docs/build-plugins) |
+| Existing GPT editing and creation eligibility | [OpenAI: Creating and editing GPTs](https://help.openai.com/en/articles/8554397-creating-and-editing-gpts) |
+| GPT sharing availability | [OpenAI: Sharing and publishing GPTs](https://help.openai.com/en/articles/8798878-sharing-and-publishing-gpts) |
+| GPT retirement and migration | [OpenAI: Custom GPT retirement and migration FAQ](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq) |
 | Gemini CLI skills | [Google: Agent Skills](https://geminicli.com/docs/cli/skills/) |
 | Gemini CLI commands | [Google: CLI reference](https://geminicli.com/docs/cli/cli-reference/) |
 | Gemini Gems | [Google: Creating Gems](https://support.google.com/gemini/answer/15235603?hl=en) |

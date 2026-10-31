@@ -2,16 +2,19 @@
 
 [Project home](../README.md) · [Use in ChatGPT without installation](CHATGPT_START.md)
 
-Updated: **2026-10-31**, package **2.0.0**.
+Updated: **2026-10-31**, package **2.1.0**.
 
 | Route | Current status |
 | --- | --- |
 | ChatGPT direct instructions and single TXT attachment | Available from this repository; requires the chat's image and code tools for file generation |
 | Portable skills-only plugin ZIP | Built for supported ingestion; downloadable below |
+| GPT compatibility kit | Prepared instructions, knowledge, icon and six preview cases; no saved GPT exists |
 | Account installation through Plugin Creator | Not completed in this workflow; the account creation tool was unavailable |
 | Public ChatGPT Plugins Directory | Not submitted or published; no verified listing URL exists |
 
-**[Download the plugin package](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-plugin-2.0.0.zip)**. This is an implementation package, not a completed public submission. Downloading it does not install it into a ChatGPT account.
+**[Download the plugin package](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-plugin-2.1.0.zip)**. This is an implementation package, not a completed public submission. Downloading it does not install it into a ChatGPT account.
+
+For account creation, use the [step-by-step Plugin Creator guide](INSTALL_CHATGPT.md#save-the-plugin-inside-chatgpt) and [prepared creation request](../prompts/create-chatgpt-plugin.txt). For an existing editable GPT, use the separate [GPT compatibility kit](CUSTOM_GPT.md).
 
 ## What is implemented
 

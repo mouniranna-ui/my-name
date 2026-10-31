@@ -10,7 +10,8 @@ Start with the guide matching your platform, then follow the drawing workflow. E
 | --- | --- |
 | [ChatGPT without installation](CHATGPT_START.md) | Users who want to attach a drawing and work directly in chat |
 | [Codex installation](INSTALL_CODEX.md) | Users with a local, CLI, IDE or connected cloud environment |
-| [ChatGPT plugin routes](INSTALL_CHATGPT.md) | Users of supported local marketplaces; future public listing information |
+| [ChatGPT plugin routes](INSTALL_CHATGPT.md) | Save through Plugin Creator, test, and distinguish local/account/public installation |
+| [Existing GPT configuration](CUSTOM_GPT.md) | Ready configuration files and current account eligibility limits |
 | [Gemini CLI and Gems](INSTALL_GEMINI.md) | Gemini users choosing between a native skill and portable instructions |
 
 ## Drawing and review

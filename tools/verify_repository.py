@@ -101,6 +101,23 @@ for required in ("README.md", "README.en.md", "README.fr.md", "LICENSE", "prompt
     if not (ROOT / required).is_file():
         issues.append(f"Missing required distribution file: {required}")
 
+gpt = json.loads((ROOT / "gpt/configuration.json").read_text())
+if gpt["name"] != ui["displayName"]:
+    issues.append("GPT and plugin display names differ")
+gpt_inputs = {
+    "instructions.txt": ROOT / "gpt/instructions.txt",
+    "TSBECM-202-ChatGPT.txt": kit.OUTPUT,
+    "icon.png": plugin / ui["logo"],
+    "preview-tests.json": ROOT / "gpt/preview-tests.json",
+}
+for name in [gpt["instructions_file"], gpt["icon_file"], gpt["preview_tests_file"], *gpt["knowledge_files"]]:
+    if name not in gpt_inputs or not gpt_inputs[name].is_file():
+        issues.append(f"Missing GPT kit input: {name}")
+if len(gpt_inputs["instructions.txt"].read_text()) > 7500:
+    issues.append("GPT instructions exceed the project's conservative size budget")
+if not json.loads(gpt_inputs["preview-tests.json"].read_text()).get("cases"):
+    issues.append("No GPT preview cases prepared")
+
 print(json.dumps({"passed": not issues, "local_links_checked": checked_links,
                   "issues": issues}, ensure_ascii=False, indent=2))
 sys.exit(1 if issues else 0)

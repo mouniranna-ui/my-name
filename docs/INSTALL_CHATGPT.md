@@ -9,8 +9,23 @@
 | Route | What it provides | Status |
 | --- | --- | --- |
 | Direct chat | Instructions and optional helper source attached to the conversation | Available now; host execution tools are required for files |
+| Account plugin through Plugin Creator | A saved reusable plugin selected with `@` | Package ready; account save and live test remain pending |
 | Local desktop marketplace | A reusable plugin in a supported local ChatGPT/Codex setup | Package supplied; availability depends on the local client |
 | Public Plugins Directory | A discoverable account-installed plugin | Not submitted or published |
+| Existing editable GPT | Instructions, knowledge, icon and preview cases | Configuration kit supplied; [check current eligibility](CUSTOM_GPT.md) |
+
+## Save the plugin inside ChatGPT
+
+1. Download the [TSBECM 202 plugin ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-plugin-2.1.0.zip). Keep the ZIP intact; it contains root `plugin.json` and the drafting skill.
+2. In ChatGPT, start a conversation and select **Plugin Creator** from the `@` menu. Use the account/workspace where the plugin should live.
+3. Attach the plugin ZIP and paste [the prepared creation request](../prompts/create-chatgpt-plugin.txt). It asks Plugin Creator to reuse the package, check for an existing owned plugin, save the intended plugin and return its real link.
+4. Confirm that the saved product is named **TSBECM 202** and includes **draft-cad-from-images**. A generated ZIP, a local marketplace entry or a response saying "ready" is not proof of account installation. If the save capability is unavailable, preserve the ZIP and keep installation pending.
+5. Start a fresh conversation, select the saved plugin with `@`, attach a source drawing and request DXF, PDF and verification. For an initial synthetic test, use the dimensioned-plate case in [preview-tests.json](../gpt/preview-tests.json).
+6. Open the returned files. Check native geometry, dimensions, layers, units and the PDF before using the workflow on your project.
+
+The current package has **not yet been saved or live-tested as an account plugin in this workflow**. There is no verified account-plugin URL to link here. Plugin creation availability depends on the account/workspace and enabled capabilities.
+
+Private creation, sharing a saved plugin with a workspace, and publishing it to the public directory are separate stages. A public listing needs publisher information and applicable review. See [publication status](PLUGIN_PUBLICATION.md) before inviting people to search the directory.
 
 ## Direct chat: no local installation
 

@@ -1,11 +1,9 @@
-# TSBECM 202 2.0.0
+# TSBECM 202 2.1.0
 
-This release renames the project and plugin to TSBECM 202, consolidates the documentation in English and adds a coordinated industrial workshop drafting showcase.
+This release adds a manual GPT compatibility kit and a detailed ChatGPT account-plugin setup guide. The GPT ZIP includes English instructions, field configuration, the complete knowledge attachment, the existing icon and six prepared preview cases. These cases have not been executed inside a saved GPT.
 
-The new documentation includes a platform selector, detailed ChatGPT/Codex/Gemini setup, a complete drawing workflow, verification evidence and troubleshooting. The ChatGPT TXT attachment includes the actual skill, references and CAD helper source.
+OpenAI currently restricts new GPT creation on personal accounts. The configuration kit is intended for an existing editable GPT or an eligible managed workspace. It does not create a GPT, an account plugin or a public link.
 
-The workshop is a synthetic 24 m × 36 m study with a roof plan, elevations and plate patterns. It includes editable DXF, PDF sheets, source inputs, native dimensions and reproducible numerical checks. It is not a client project or a structural design.
+The portable skills-only plugin is prepared for account ingestion. Its account save and live installation test are still pending because the save capability was unavailable. Public-directory submission also remains pending publisher details and review. The included setup request explains how to reuse the package without creating duplicates.
 
-The technical skill name remains `draft-cad-from-images`. The portable plugin directory and package name are now `tsbecm-202`. Older Photo to AutoCAD packages remain historical versions.
-
-The public ChatGPT directory listing is still not submitted or published. Publisher details and the applicable official review process remain separate from GitHub distribution.
+The drafting skill, CAD helper behavior and synthetic industrial workshop example remain unchanged. All active project documentation remains English.

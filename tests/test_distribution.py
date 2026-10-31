@@ -1,5 +1,6 @@
 import importlib.util
 import hashlib
+import json
 import re
 from pathlib import Path
 import tempfile
@@ -81,6 +82,14 @@ class DistributionTests(unittest.TestCase):
                     self.assertIn("skills/draft-cad-from-images/SKILL.md", names)
                 elif "-skill-" in filename:
                     self.assertIn("draft-cad-from-images/SKILL.md", names)
+                elif "-gpt-" in filename:
+                    config = json.loads(z.read("configuration.json"))
+                    for path in [config["instructions_file"], config["icon_file"],
+                                 config["preview_tests_file"], *config["knowledge_files"]]:
+                        self.assertIn(path, names)
+                    self.assertEqual(z.read(config["knowledge_files"][0]),
+                                     chatgpt_kit.render().encode("utf-8"))
+                    self.assertNotIn("plugin.json", names)
                 else:
                     self.assertIn("tsbecm-202/README.md", names)
                     self.assertIn("tsbecm-202/.agents/plugins/marketplace.json", names)

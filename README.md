@@ -6,7 +6,7 @@
 
 An open drafting workflow for students, technicians and detailers. Read a drawing, reconstruct native geometry, verify its dimensions and deliver a clean CAD file with a printable PDF.
 
-[Start in ChatGPT](docs/CHATGPT_START.md) · [Install in Codex](docs/INSTALL_CODEX.md) · [Use Gemini](docs/INSTALL_GEMINI.md) · [Documentation](docs/README.md)
+[ChatGPT plugin](docs/INSTALL_CHATGPT.md) · [GPT setup](docs/CUSTOM_GPT.md) · [Start in ChatGPT](docs/CHATGPT_START.md) · [Install in Codex](docs/INSTALL_CODEX.md) · [Use Gemini](docs/INSTALL_GEMINI.md) · [Documentation](docs/README.md)
 
 </div>
 
@@ -27,12 +27,16 @@ TSBECM 202 helps an AI assistant turn photographed or scanned technical drawings
 | Your setup | Recommended route | Guide |
 | --- | --- | --- |
 | ChatGPT in a browser or on a phone | Attach one TXT workflow file and your drawing, or paste the ready prompt | [ChatGPT without installation](docs/CHATGPT_START.md) |
+| ChatGPT with Plugin Creator enabled | Save the supplied plugin package, then select it with `@` | [Account plugin setup](docs/INSTALL_CHATGPT.md#save-the-plugin-inside-chatgpt) |
+| An existing editable GPT or eligible managed workspace | Apply the prepared GPT configuration kit | [GPT availability and setup](docs/CUSTOM_GPT.md) |
 | Codex CLI, local environment or IDE | Install the bundled agent skill | [Codex installation](docs/INSTALL_CODEX.md) |
 | A supported local ChatGPT/Codex desktop setup | Use the included plugin marketplace | [ChatGPT plugin guide](docs/INSTALL_CHATGPT.md) |
 | Gemini CLI | Install the same skill into Gemini's skill directory | [Gemini installation](docs/INSTALL_GEMINI.md) |
 | Gemini app or a Gem | Use the instruction and knowledge files | [Gemini guide](docs/INSTALL_GEMINI.md#gemini-app-and-gems) |
 
 Producing actual DXF/PDF files requires image access, Python execution and file output support. If those capabilities are unavailable, the workflow returns a source ledger and runnable code. The downloadable plugin has **not been published in the public ChatGPT Plugins Directory**. [Publication status](docs/PLUGIN_PUBLICATION.md).
+
+**GPT availability (checked 2026-10-31):** new GPT creation and publishing are unavailable on personal accounts. The GPT ZIP is for existing editable GPTs or eligible managed workspaces; it does not create a GPT or a share link. [Official availability and prepared settings](docs/CUSTOM_GPT.md).
 
 ## Featured project: industrial workshop
 
@@ -48,14 +52,15 @@ A reproducible **24 m × 36 m educational workshop study**, with seven frame lin
 
 The drawings are generated from a published synthetic specification. They include real CAD geometry and native dimensions, with saved-file audit results. The previews are rendered from the DXF files. They are not AutoCAD screenshots, a client reference or proof of structural adequacy. Member sizing, loads, material grades, plate thicknesses, bolts, welds and foundations are outside this example.
 
-## Download version 2.0.0
+## Download version 2.1.0
 
 | Package | Choose it when |
 | --- | --- |
-| [Complete project ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-source-2.0.0.zip) | You want the documentation, installer, scripts and examples |
-| [Standalone skill ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-skill-2.0.0.zip) | You want to install the skill manually |
-| [Plugin ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-plugin-2.0.0.zip) | Your environment supports plugin package ingestion |
+| [Complete project ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-source-2.1.0.zip) | You want the documentation, installer, scripts and examples |
+| [Standalone skill ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-skill-2.1.0.zip) | You want to install the skill manually |
+| [Plugin ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-plugin-2.1.0.zip) | Your environment supports plugin package ingestion |
 | [Single ChatGPT TXT](prompts/TSBECM-202-ChatGPT.txt) | You want to attach the workflow and helper source to a chat |
+| [GPT configuration ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-gpt-2.1.0.zip) | You can edit an existing GPT or create one in an eligible workspace |
 | [SHA-256 checksums](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/SHA256SUMS.txt) | You want to verify the archive bytes |
 
 Use the download button on each GitHub file page. For **Code → Download ZIP**, keep the `photo-to-autocad` branch selected; this branch contains the project. The repository URL is a hosting address, while **TSBECM 202** is the project and plugin name.
@@ -155,6 +160,7 @@ python tools/build_release.py
 | Location | Contents |
 | --- | --- |
 | `plugins/tsbecm-202/` | Portable plugin and the drafting skill |
+| `gpt/` | Manual GPT configuration, instructions and prepared preview cases |
 | `docs/` | Platform guides, workflow, verification and support |
 | `prompts/` | Copyable instructions and the single ChatGPT attachment |
 | `examples/` | Reproducible drawings, previews, source specifications and evidence |
