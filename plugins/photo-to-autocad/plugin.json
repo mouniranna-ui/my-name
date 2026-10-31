@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "photo-to-autocad",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Convert technical drawing images into editable, dimensioned CAD with checked PDF previews.",
   "keywords": [
     "cad",
@@ -25,9 +25,33 @@
           "Turn this technical drawing photo into editable CAD and flag any unclear dimensions."
         ],
         "logo": "./skills/draft-cad-from-images/assets/photo-to-autocad.png",
-        "composerIcon": "./skills/draft-cad-from-images/assets/photo-to-autocad.png"
+        "composerIcon": "./skills/draft-cad-from-images/assets/photo-to-autocad.png",
+        "websiteURL": "https://github.com/mouniranna-ui/my-name/tree/photo-to-autocad",
+        "supportURL": "https://github.com/mouniranna-ui/my-name/blob/photo-to-autocad/docs/SUPPORT.md"
+      },
+      "review": {
+        "prompts": [
+          "Redraw the attached technical drawing as editable DXF with native dimensions and a PDF. Separate readable, derived and unresolved dimensions.",
+          "قرا هاد الرسم وردو DXF بالكوطاسيون والعبارات، ومعاه PDF. بيّن ليا القياسات الناقصة وراجع الملفات اللي صنعت.",
+          "Les cotes de cette photo se contredisent. Identifie le conflit et reconstruis les parties confirmées sans inventer de mesure."
+        ]
+      },
+      "publication": {
+        "release_notes": "Version 1.1.0 adds a no-install ChatGPT quick start, a single text attachment containing workflow references and CAD helpers, illustrated guides, and explicit plugin publication status. CAD geometry helpers are unchanged.",
+        "translations": {
+          "ar": {
+            "subtitle": "من صورة تقنية إلى رسم CAD",
+            "description": "حوّل صور الرسومات التقنية إلى DXF قابل للتعديل مع قياسات وطبقات ونصوص ومعاينة PDF. يميّز بين القياسات المقروءة والمستنتجة والناقصة. يحتاج إلى بيئة تقرأ الصور وتشغّل Python وتعيد الملفات. ملف DWG يحتاج إلى برنامج CAD أو محوّل حقيقي. إعادة الرسم ليست مصادقة هندسية."
+          },
+          "fr-FR": {
+            "subtitle": "Photos de plans en CAO",
+            "description": "Reconstitue les dessins techniques photographiés en DXF modifiable avec cotations natives, calques, annotations et aperçu PDF vérifié. Distingue les cotes lues, calculées et non résolues. Nécessite un environnement capable de lire les images, exécuter Python et retourner des fichiers. Un véritable DWG exige un logiciel CAO ou un convertisseur. Ne certifie pas le dimensionnement structurel."
+          }
+        }
       }
     }
   },
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/mouniranna-ui/my-name/tree/photo-to-autocad",
+  "repository": "https://github.com/mouniranna-ui/my-name"
 }

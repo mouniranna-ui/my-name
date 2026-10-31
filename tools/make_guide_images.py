@@ -38,16 +38,22 @@ guide('codex-steps.svg','CODEX · LOCAL SKILL','Download the repository, then ru
  ('Open Codex',['Start a new session','Select the skill with $','Attach the drawing image']),
  ('Request CAD',['Use draft-cad-from-images','Ask for DXF + PDF','Review unresolved details'])],
  'Illustrated instructions, not screenshots. See the Codex guide for the exact one-line command and Python setup.')
-guide('chatgpt-steps.svg','CHATGPT · CHOOSE YOUR ROUTE','Local plugin for supported desktop setups; portable instructions for other chats.',[
- ('Get the files',['Download the source ZIP','Read the ChatGPT guide','Choose a supported route']),
- ('Load the workflow',['Desktop: local marketplace','Web/mobile: copy prompt','Attach source images']),
- ('Check capabilities',['Can it read your image?','Can it run Python?','Can it return files?']),
- ('Review delivery',['With execution: DXF/PDF','Without it: code + ledger','Run the code locally'])],
- 'Uploading a ZIP to a chat is not plugin installation. A GitHub release is separate from the public Plugins Directory.')
+guide('chatgpt-direct.svg','CHATGPT · NO LOCAL INSTALL','Use your drawing and a ready-made workflow in an ordinary supported conversation.',[
+ ('Open ChatGPT',['Go to chatgpt.com','Start a new chat','No terminal needed']),
+ ('Add your drawing',['Attach clear photos','Include every view','Keep dimensions visible']),
+ ('Add the workflow',['Paste the ready prompt','Or attach the single TXT','It includes CAD helpers']),
+ ('Get checked CAD',['Request DXF + PDF','Review missing dimensions','Execution tools required'])],
+ 'Illustrated steps, not screenshots. The ChatGPT link opens a chat; the prompt and files must be added by the user.')
+guide('chatgpt-steps.svg','CHATGPT · THREE WAYS TO USE IT','Choose direct instructions now, a supported local setup, or the future public listing.',[
+ ('Direct chat · now',['Open ChatGPT','Add prompt or TXT + image','No local skill installation']),
+ ('Local desktop',['Open repository project','Use local marketplace','Supported setups only']),
+ ('Public directory',['Plugin package is built','Submission still pending','No public install link yet']),
+ ('Output requirements',['Image and file access','Python execution','Editable DXF + checked PDF'])],
+ 'An uploaded TXT supplies instructions and source code. A plugin ZIP does not install itself when attached to a chat.')
 guide('gemini-steps.svg','GEMINI · CLI OR GEM','Use the native skill in Gemini CLI, or the instruction adapter in a Gemini Gem.',[
  ('Download',['Get the repository ZIP','Extract the files','Read the Gemini guide']),
  ('Gemini CLI',['python tools/install_skill.py','--target gemini','Reload skills / new session']),
  ('Gemini app',['Explore Gems → New Gem','Paste the Gem instructions','Add knowledge, then Save']),
  ('Give your drawing',['Attach a clear source','Ask for the source ledger','Generate files if supported'])],
  'The Gem adapter does not install a CLI skill or guarantee Python execution. Platform permissions still apply.')
-print('Created four instructional diagrams in docs/images')
+print('Created five instructional diagrams in docs/images')

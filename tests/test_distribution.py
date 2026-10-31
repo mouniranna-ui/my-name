@@ -1,4 +1,6 @@
 import importlib.util
+import hashlib
+import re
 from pathlib import Path
 import tempfile
 import unittest
@@ -16,6 +18,7 @@ def module(name):
 
 installer = module("install_skill")
 builder = module("build_release")
+chatgpt_kit = module("build_chatgpt_kit")
 
 
 class DistributionTests(unittest.TestCase):
@@ -81,6 +84,24 @@ class DistributionTests(unittest.TestCase):
                 else:
                     self.assertIn("photo-to-autocad/README.md", names)
                     self.assertIn("photo-to-autocad/.agents/plugins/marketplace.json", names)
+                    self.assertIn("photo-to-autocad/prompts/Photo-to-AutoCAD-ChatGPT.txt", names)
+
+    def test_chatgpt_attachment_can_be_extracted_without_changing_source(self):
+        content = chatgpt_kit.render()
+        sections = re.findall(
+            r"===== BEGIN FILE: ([^\n]+) =====\nSHA256: ([0-9a-f]{64})\n(.*?)===== END FILE: \1 =====\n",
+            content, re.S,
+        )
+        self.assertEqual({name for name, _, _ in sections}, set(chatgpt_kit.SOURCES))
+        for name, digest, body in sections:
+            data = body.encode("utf-8")
+            self.assertEqual(hashlib.sha256(data).hexdigest(), digest)
+            self.assertEqual(data, chatgpt_kit.SOURCES[name].read_bytes())
+            path = self.root / name
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(data)
+        helper = self.root / "scripts/cad_tools.py"
+        compile(helper.read_text(), str(helper), "exec")
 
 
 if __name__ == "__main__":

@@ -2,6 +2,7 @@
 """Offline verification of documentation links, skill metadata and bundled assets."""
 from pathlib import Path
 import json
+import importlib.util
 import re
 import sys
 from urllib.parse import unquote, urlsplit
@@ -83,6 +84,18 @@ for workflow in (ROOT / ".github/workflows").glob("*.yml"):
     data = yaml.safe_load(workflow.read_text())
     if not data.get("jobs"):
         issues.append(f"Workflow has no jobs: {workflow.name}")
+
+spec = importlib.util.spec_from_file_location("chatgpt_kit", ROOT / "tools/build_chatgpt_kit.py")
+kit = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(kit)
+if not kit.OUTPUT.is_file() or kit.OUTPUT.read_text(encoding="utf-8") != kit.render():
+    issues.append("ChatGPT attachment is missing or stale")
+for prompt in ui.get("defaultPrompt", []):
+    if not isinstance(prompt, str) or not prompt.strip() or len(prompt) > 128 or "\n" in prompt:
+        issues.append("Invalid listing default prompt")
+for locale, translated in manifest["extensions"]["com.openai"].get("publication", {}).get("translations", {}).items():
+    if len(translated.get("subtitle", "")) > 30 or len(translated.get("description", "")) > 4000:
+        issues.append(f"Translation too long: {locale}")
 
 for required in ("README.md", "README.en.md", "README.fr.md", "LICENSE", "prompts/portable-knowledge.txt"):
     if not (ROOT / required).is_file():

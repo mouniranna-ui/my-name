@@ -1,6 +1,6 @@
 # المصادر الرسمية
 
-مراجعة تعليمات المنصات: **2026-10-25**. الواجهات والإمكانيات تقدر تتبدّل؛ إذا كان فرق، ارجع للوثيقة الرسمية. هاد المشروع كيصف ما يدعمه الكود وما وثقته المنصات، وما كيدّعيش اختباراً مباشراً ما تدارش.
+مراجعة تعليمات المنصات: **2026-10-31** لإرشادات ChatGPT والنشر؛ باقي المصادر راجعات فـ2026-10-25. الواجهات والإمكانيات تقدر تتبدّل؛ إذا كان فرق، ارجع للوثيقة الرسمية. هاد المشروع كيصف ما يدعمه الكود وما وثقته المنصات، وما كيدّعيش اختباراً مباشراً ما تدارش.
 
 | الموضوع | المصدر |
 | --- | --- |
@@ -8,6 +8,7 @@
 | Plugins والمنصات المدعومة | [OpenAI: Plugins](https://learn.chatgpt.com/docs/plugins) |
 | Plugin portable وmarketplace محلي | [OpenAI: Package your plugin](https://developers.openai.com/plugins/build/plugins) |
 | الفرق بين skill وplugin | [OpenAI: Skills & Plugins](https://learn.chatgpt.com/docs/skills-and-plugins) |
+| نشر الإضافة والهوية والمراجعة | [OpenAI: Submit plugins](https://developers.openai.com/plugins/deploy/submission) |
 | Gemini CLI، مسارات skills وأوامر الإدارة | [Google: Agent Skills](https://geminicli.com/docs/cli/skills/) |
 | أوامر Gemini CLI | [Google: CLI reference](https://geminicli.com/docs/cli/cli-reference/) |
 | إنشاء Gem وإضافة المعرفة | [Google: Tips for creating custom Gems](https://support.google.com/gemini/answer/15235603?hl=en) |

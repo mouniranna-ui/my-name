@@ -10,6 +10,16 @@ Skill كتعاون المساعد يقرا صور الرسومات التقني�
 
 كتخدم مع Codex وGemini CLI كـskill، ومع ChatGPT وGemini عبر الطرق الموضحة لتحت. خاص المساعد يقدر يقرا الصور ويشغّل Python باش يخرج الملفات فعلياً.
 
+## بغيتي تخدم غير فـChatGPT بلا تثبيت؟
+
+**[ابدأ من هنا: شرح بالصور وطلب جاهز تنسخو](docs/CHATGPT_START.md)** · **[افتح ChatGPT](https://chatgpt.com/)**
+
+زيد صورة الرسم ولصق الطلب الجاهز. ويمكن ترفق [ملف TXT واحد فيه التعليمات والأدوات](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/prompts/Photo-to-AutoCAD-ChatGPT.txt). ما تحتاج لا Terminal لا تثبيت فالحاسوب. إنتاج DXF وPDF كيحتاج المحادثة تقرا الصور وتشغّل Python وترد الملفات.
+
+![طريقة الاستعمال بلا تثبيت](docs/images/chatgpt-direct.svg)
+
+**إضافة ChatGPT:** حزمة Plugin موجودة فالتحميل؛ الإدراج فالدليل العمومي باقي ما تنشرش. [تفاصيل الإضافة وحالة النشر](docs/PLUGIN_PUBLICATION.md).
+
 ![مراحل قراءة الرسم، البناء، التحقق والتسليم](docs/images/workflow.svg)
 
 ## مثال حقيقي من التجربة
@@ -24,15 +34,15 @@ Skill كتعاون المساعد يقرا صور الرسومات التقني�
 
 ## التحميل
 
-**[حمّل النسخة الكاملة 1.0.0](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-source-1.0.0.zip)**، ومن بعد فك الضغط. احتافظ بالمجلد كامل؛ `SKILL.md` بوحدو ما فيهش أدوات الرسم.
+**[حمّل النسخة الكاملة 1.1.0](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-source-1.1.0.zip)**، ومن بعد فك الضغط. احتافظ بالمجلد كامل؛ `SKILL.md` بوحدو ما فيهش أدوات الرسم.
 
 المشروع منشور ففرع [`photo-to-autocad`](https://github.com/mouniranna-ui/my-name/tree/photo-to-autocad). للتحميل من **Code → Download ZIP**، تأكد بلي هاد الفرع هو المختار.
 
 | الملف | الاستعمال |
 | --- | --- |
-| [النسخة الكاملة](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-source-1.0.0.zip) | الشرح، الصور، المثبّت، المثال والأدوات |
-| [Skill مستقلة](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-skill-1.0.0.zip) | مجلد skill للنسخ اليدوي |
-| [حزمة Plugin](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-plugin-1.0.0.zip) | للمنصات اللي كتدعم استيراد الحزم |
+| [النسخة الكاملة](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-source-1.1.0.zip) | الشرح، الصور، المثبّت، المثال والأدوات |
+| [Skill مستقلة](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-skill-1.1.0.zip) | مجلد skill للنسخ اليدوي |
+| [حزمة Plugin](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-plugin-1.1.0.zip) | للمنصات اللي كتدعم استيراد الحزم |
 | [SHA256SUMS.txt](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/SHA256SUMS.txt) | بصمات التحقق من الملفات |
 
 للي كيستعمل Git:

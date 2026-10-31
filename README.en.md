@@ -6,9 +6,18 @@ An agent skill for reconstructing photographed technical drawings as editable, d
 
 ![Workflow](docs/images/workflow.svg)
 
+## Use it directly in ChatGPT
+
+**[Open ChatGPT](https://chatgpt.com/)** and attach your drawing plus [Photo-to-AutoCAD-ChatGPT.txt](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/prompts/Photo-to-AutoCAD-ChatGPT.txt). This single text file includes the instructions, technical references, dependencies and CAD helper source. Ask: **“Follow the attached Photo to AutoCAD workflow and create editable DXF and a checked PDF from my drawing.”** No local skill installation or terminal is required. File generation still requires the chat's image access, Python execution and file output tools.
+
+For copy-and-paste use, [copy these instructions](prompts/chatgpt-instructions.txt) into a chat and attach the drawing. [Illustrated quick start](docs/CHATGPT_START.md) · [Plugin publication status](docs/PLUGIN_PUBLICATION.md). The plugin ZIP exists; a public ChatGPT directory listing has not been published.
+
+![Direct ChatGPT workflow](docs/images/chatgpt-direct.svg)
+
+
 ## Download and install
 
-[Download the complete 1.0.0 package](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-source-1.0.0.zip) and extract the complete folder. Separate [skill](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-skill-1.0.0.zip), [plugin](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-plugin-1.0.0.zip) and [checksums](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/SHA256SUMS.txt) are also available. Read the code before running it.
+[Download the complete 1.1.0 package](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-source-1.1.0.zip) and extract the complete folder. Separate [skill](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-skill-1.1.0.zip), [plugin](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-plugin-1.1.0.zip) and [checksums](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/SHA256SUMS.txt) are also available. Read the code before running it.
 
 The project is published on the [`photo-to-autocad` branch](https://github.com/mouniranna-ui/my-name/tree/photo-to-autocad). Keep that branch selected when using **Code → Download ZIP**, or clone it directly:
 

@@ -6,9 +6,18 @@ Une skill pour reconstruire des dessins techniques photographiés en **DXF modif
 
 ![Méthode de travail](docs/images/workflow.svg)
 
+## Utilisation directe dans ChatGPT
+
+**[Ouvrir ChatGPT](https://chatgpt.com/)** et joindre le dessin avec [Photo-to-AutoCAD-ChatGPT.txt](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/prompts/Photo-to-AutoCAD-ChatGPT.txt). Ce fichier unique contient les instructions, les références, les dépendances et le code des outils CAO. Écrire : **« Suis le fichier Photo to AutoCAD joint et produis un DXF modifiable avec toutes les cotes lisibles et un PDF vérifié. »** Aucune installation locale ni terminal n'est nécessaire. La génération des fichiers exige que la conversation puisse lire les images, exécuter Python et retourner des fichiers.
+
+[Guide illustré](docs/CHATGPT_START.md) · [État de publication du plugin](docs/PLUGIN_PUBLICATION.md). Le ZIP du plugin est disponible ; sa publication dans l'annuaire public ChatGPT n'est pas encore effectuée.
+
+![Utilisation directe de ChatGPT](docs/images/chatgpt-direct.svg)
+
+
 ## Télécharger et utiliser
 
-[Télécharger la version complète 1.0.0](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-source-1.0.0.zip), puis extraire le dossier complet. Le projet est publié sur la [branche `photo-to-autocad`](https://github.com/mouniranna-ui/my-name/tree/photo-to-autocad) : garder cette branche sélectionnée pour **Code → Download ZIP**. Ouvrir un terminal dans le dossier extrait. Python 3.10 ou ultérieur est nécessaire pour les outils CAD.
+[Télécharger la version complète 1.1.0](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-source-1.1.0.zip), puis extraire le dossier complet. Le projet est publié sur la [branche `photo-to-autocad`](https://github.com/mouniranna-ui/my-name/tree/photo-to-autocad) : garder cette branche sélectionnée pour **Code → Download ZIP**. Ouvrir un terminal dans le dossier extrait. Python 3.10 ou ultérieur est nécessaire pour les outils CAD.
 
 Avec Git :
 

@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import importlib.util
 from pathlib import Path
 import re
 import zipfile
@@ -40,6 +41,10 @@ def write_zip(path, files):
 
 
 def build(output):
+    spec = importlib.util.spec_from_file_location("chatgpt_kit", ROOT / "tools/build_chatgpt_kit.py")
+    kit = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(kit)
+    kit.build()
     version = (ROOT / "VERSION").read_text().strip()
     if not re.fullmatch(r"\d+\.\d+\.\d+", version):
         raise ValueError("VERSION must contain a release version such as 1.0.0")

@@ -1,7 +1,7 @@
-Photo to AutoCAD 1.0.0 provides an editable CAD reconstruction skill, illustrated Darija/Arabic, English and French guides, and installation routes for Codex, ChatGPT and Gemini.
+Photo to AutoCAD 1.1.0 adds direct ChatGPT use without a local skill installation: an illustrated quick start, a copyable prompt and one TXT attachment containing the actual workflow, references, dependency list and CAD helper code.
 
-Choose the **source ZIP** for the complete installer, documentation and examples; the **skill ZIP** for manual skill installation; or the **plugin ZIP** for supported plugin ingestion. SHA256SUMS.txt verifies the download bytes.
+The plugin package now includes review prompts, release notes and Arabic/French listing translations. Documentation explains the supported routes, support and observed data flow, and distinguishes a downloadable package from a published ChatGPT directory listing.
 
-The release includes native DXF/PDF helpers, a synthetic worked example, source/uncertainty tracking and automated regression checks. A real CAD application or converter is required for DWG. Plain web chats and Gems need actual execution capabilities to generate files; instruction adapters do not add those capabilities.
+Choose the source ZIP for all documentation and tools, the skill ZIP for manual skill installation, or the plugin ZIP for supported ingestion. SHA256SUMS.txt verifies download bytes. Existing 1.0.0 archives remain available.
 
-This GitHub release does not imply publication in the OpenAI public Plugins Directory or native Autodesk AutoCAD application testing.
+The public directory submission is not yet complete. Publisher identity, country/commerce choices, policy decisions and applicable portal verification remain. No public listing URL or account installation is claimed. Actual CAD file creation requires image access and code execution. DWG requires a real converter; geometry helpers are unchanged.

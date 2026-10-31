@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.0 — 2026-10-31
+
+- Direct ChatGPT quick start with copyable prompt and a single comprehensive TXT attachment.
+- Versioned attachment generator with exact source hashes, technical references and CAD helpers.
+- ChatGPT plugin instructions, publication status, support page and observed data-flow notes.
+- Arabic/French listing translations, review prompts and release notes in the plugin manifest.
+- New and revised illustrated guides; existing CAD helper behavior is unchanged.
+- Public plugin listing remains pending publisher metadata and the official review process.
+
 ## 1.0.0 — 2026-10-25
 
 - Portable drafting skill with source-ledger, geometry and visual verification workflows.

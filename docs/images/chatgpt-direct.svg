@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="510" viewBox="0 0 1440 510" role="img" aria-label="CHATGPT · NO LOCAL INSTALL">
+<rect width="1440" height="510" rx="28" fill="#101a2c"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="60" y="76" fill="#ffffff" font-size="35" font-weight="700">CHATGPT · NO LOCAL INSTALL</text>
+<text x="60" y="118" fill="#bdcce0" font-size="21">Use your drawing and a ready-made workflow in an ordinary supported conversation.</text>
+<rect x="60" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="100" cy="211" r="20" fill="#4ce2ba"/>
+<text x="100" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">1</text>
+<text x="85" y="264" fill="#ffffff" font-size="23" font-weight="700">Open ChatGPT</text>
+<text x="85" y="303" fill="#d4e0ed" font-size="18">Go to chatgpt.com</text>
+<text x="85" y="332" fill="#d4e0ed" font-size="18">Start a new chat</text>
+<text x="85" y="361" fill="#d4e0ed" font-size="18">No terminal needed</text>
+<path d="M369 290 h22 m-7 -7 l7 7 -7 7" fill="none" stroke="#4ce2ba" stroke-width="3"/>
+<rect x="400" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="440" cy="211" r="20" fill="#4ce2ba"/>
+<text x="440" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">2</text>
+<text x="425" y="264" fill="#ffffff" font-size="23" font-weight="700">Add your drawing</text>
+<text x="425" y="303" fill="#d4e0ed" font-size="18">Attach clear photos</text>
+<text x="425" y="332" fill="#d4e0ed" font-size="18">Include every view</text>
+<text x="425" y="361" fill="#d4e0ed" font-size="18">Keep dimensions visible</text>
+<path d="M709 290 h22 m-7 -7 l7 7 -7 7" fill="none" stroke="#4ce2ba" stroke-width="3"/>
+<rect x="740" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="780" cy="211" r="20" fill="#4ce2ba"/>
+<text x="780" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">3</text>
+<text x="765" y="264" fill="#ffffff" font-size="23" font-weight="700">Add the workflow</text>
+<text x="765" y="303" fill="#d4e0ed" font-size="18">Paste the ready prompt</text>
+<text x="765" y="332" fill="#d4e0ed" font-size="18">Or attach the single TXT</text>
+<text x="765" y="361" fill="#d4e0ed" font-size="18">It includes CAD helpers</text>
+<path d="M1049 290 h22 m-7 -7 l7 7 -7 7" fill="none" stroke="#4ce2ba" stroke-width="3"/>
+<rect x="1080" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="1120" cy="211" r="20" fill="#4ce2ba"/>
+<text x="1120" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">4</text>
+<text x="1105" y="264" fill="#ffffff" font-size="23" font-weight="700">Get checked CAD</text>
+<text x="1105" y="303" fill="#d4e0ed" font-size="18">Request DXF + PDF</text>
+<text x="1105" y="332" fill="#d4e0ed" font-size="18">Review missing dimensions</text>
+<text x="1105" y="361" fill="#d4e0ed" font-size="18">Execution tools required</text>
+<text x="60" y="465" fill="#a9bfd5" font-size="18">Illustrated steps, not screenshots. The ChatGPT link opens a chat; the prompt and files must be added by the user.</text>
+</g></svg>
