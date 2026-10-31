@@ -1,12 +1,11 @@
-PHOTO TO AUTOCAD — PORTABLE KNOWLEDGE
+TSBECM 202 - PORTABLE KNOWLEDGE
 
-This file contains instructions and technical notes, not executable tooling. The full repository supplies cad_tools.py.
-
+Instructions and technical references. For helper source, use TSBECM-202-ChatGPT.txt or the complete project.
 
 
 === SKILL.md ===
 
-# Photo to AutoCAD
+# TSBECM 202
 
 Turn the supplied drawing into usable native CAD. Respond in the user's language; preserve the source's technical designations unless asked to translate them. Support Darija, Arabic, French, and English requests.
 
@@ -134,7 +133,6 @@ https://orangebook.arcelormittal.com/node/6
 Verify designation (IPE, IPE A, IPE O, etc.) and units at use time. Use relevant primary sources for other profiles and requirements. Do not extend remembered IPE values to unrelated parts. This workflow is a drawing reconstruction, not structural sizing or certification.
 
 
-
 === references/cad-authoring.md ===
 
 # Native CAD authoring
@@ -184,7 +182,6 @@ The bundled renderer uses fractional PDF points for exact paper dimensions; the 
 Discover a genuine authorized local CAD application or converter. Use its documented interface. With ODA installed, inspect the installed `ezdxf.addons.odafc` interface and use its supported conversion workflow. Reopen DWG or round-trip a copy to DXF; compare units, geometry, dimension measurements, layers and views. Conversion can change handles, so compare semantics. A nonempty file and header check alone do not prove interoperability.
 
 If unavailable, deliver DXF explicitly and explain AutoCAD `SAVEAS`. Never fabricate a DWG extension, use an untrusted converter, or upload source drawings to an online service without authorization.
-
 
 
 === references/verification.md ===

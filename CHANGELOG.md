@@ -1,5 +1,14 @@
 # Changelog
 
+## 2.0.0 — 2026-10-31
+
+- Rebrand the project and portable plugin as TSBECM 202.
+- Consolidate all active documentation, prompts and listing text in English.
+- Add a detailed documentation index, platform walkthroughs and drafting workflow.
+- Add a reproducible industrial workshop example with three CAD sheets and evidence.
+- Keep the technical skill invocation name stable for existing users.
+
+
 ## 1.1.0 — 2026-10-31
 
 - Direct ChatGPT quick start with copyable prompt and a single comprehensive TXT attachment.

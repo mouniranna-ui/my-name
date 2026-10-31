@@ -5,8 +5,8 @@ import argparse
 import hashlib
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL = ROOT / "plugins/photo-to-autocad/skills/draft-cad-from-images"
-OUTPUT = ROOT / "prompts/Photo-to-AutoCAD-ChatGPT.txt"
+SKILL = ROOT / "plugins/tsbecm-202/skills/draft-cad-from-images"
+OUTPUT = ROOT / "prompts/TSBECM-202-ChatGPT.txt"
 SOURCES = {
     "chatgpt-instructions.txt": ROOT / "prompts/chatgpt-instructions.txt",
     "SKILL.md": SKILL / "SKILL.md",
@@ -22,12 +22,11 @@ SOURCES = {
 
 def render():
     version = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
-    sections = [f"""PHOTO TO AUTOCAD — CHATGPT ATTACHMENT — {version}
+    sections = [f"""TSBECM 202 — CHATGPT ATTACHMENT — {version}
 
-HOW TO USE / طريقة الاستعمال
+HOW TO USE
 Open https://chatgpt.com/ and attach this text file plus your drawing images.
-Say: Follow this Photo to AutoCAD attachment to create editable DXF and a PDF.
-بالدارجة: تبع هاد الملف ورسم ليا الصور فـDXF قابل للتعديل مع PDF والكوطاسيون.
+Say: Follow this TSBECM 202 attachment to create editable DXF and a PDF.
 
 This attachment supplies instructions and source code; it installs nothing.
 Actual DXF/PDF output requires image access, Python and returned-file support.

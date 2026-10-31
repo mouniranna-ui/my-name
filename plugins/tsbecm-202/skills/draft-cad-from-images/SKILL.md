@@ -1,9 +1,9 @@
 ---
 name: draft-cad-from-images
-description: Redraw photographed or scanned technical drawings as editable 2D CAD with native dimensions, layers, labels, and a checked PDF preview. Use for turning a sketch, engineering drawing, steel connection, OFPPT/TSBECM exercise, or dimensioned photo into AutoCAD-compatible DXF or DWG, or verifying its dimensions. Understand cotations, cotes, plan, dessin, الكوطاسيون, القياسات, and الأوطوكاد. Do not use for artistic images, structural sizing or certification, 3D reconstruction, or generic image cleanup.
+description: Redraw photographed or scanned technical drawings as editable 2D CAD with native dimensions, layers, labels, and a checked PDF preview. Use for turning a sketch, engineering drawing, steel connection, OFPPT/TSBECM exercise, or dimensioned photo into AutoCAD-compatible DXF or DWG, or verifying its dimensions. Understand multilingual requests for dimensions, plans, drawing reconstruction and AutoCAD. Do not use for artistic images, structural sizing or certification, 3D reconstruction, or generic image cleanup.
 ---
 
-# Photo to AutoCAD
+# TSBECM 202
 
 Turn the supplied drawing into usable native CAD. Respond in the user's language; preserve the source's technical designations unless asked to translate them. Support Darija, Arabic, French, and English requests.
 

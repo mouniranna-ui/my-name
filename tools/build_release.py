@@ -10,7 +10,7 @@ import re
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-PLUGIN = ROOT / "plugins/photo-to-autocad"
+PLUGIN = ROOT / "plugins/tsbecm-202"
 SKILL = PLUGIN / "skills/draft-cad-from-images"
 ROOT_FILES = {"README.md", "README.en.md", "README.fr.md", "LICENSE", "NOTICE.md", "CHANGELOG.md", "VERSION", "requirements.txt", "requirements-dev.txt", ".gitignore", ".gitattributes"}
 ROOT_DIRS = {"plugins", "tools", "tests", "docs", "prompts", "examples", ".agents", ".github"}
@@ -53,13 +53,13 @@ def build(output):
         raise ValueError("VERSION and plugin.json disagree")
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
-    source_files = [(p, "photo-to-autocad/" + p.relative_to(ROOT).as_posix())
+    source_files = [(p, "tsbecm-202/" + p.relative_to(ROOT).as_posix())
                     for p in files_under(ROOT)
                     if p.relative_to(ROOT).parts[0] in ROOT_DIRS or p.relative_to(ROOT).as_posix() in ROOT_FILES]
     targets = {
-        f"photo-to-autocad-source-{version}.zip": source_files,
-        f"photo-to-autocad-plugin-{version}.zip": [(p, p.relative_to(PLUGIN).as_posix()) for p in files_under(PLUGIN)],
-        f"photo-to-autocad-skill-{version}.zip": [(p, "draft-cad-from-images/" + p.relative_to(SKILL).as_posix()) for p in files_under(SKILL)],
+        f"tsbecm-202-source-{version}.zip": source_files,
+        f"tsbecm-202-plugin-{version}.zip": [(p, p.relative_to(PLUGIN).as_posix()) for p in files_under(PLUGIN)],
+        f"tsbecm-202-skill-{version}.zip": [(p, "draft-cad-from-images/" + p.relative_to(SKILL).as_posix()) for p in files_under(SKILL)],
     }
     for name, files in targets.items():
         write_zip(output / name, files)

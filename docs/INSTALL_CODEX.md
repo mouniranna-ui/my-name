@@ -1,75 +1,91 @@
-# الاستعمال فـCodex
+# Install TSBECM 202 in Codex
 
-[الصفحة الرئيسية](../README.md) · [English quick start](../README.en.md)
+[Project home](../README.md) · [All guides](README.md) · [Drawing workflow](WORKFLOW.md)
 
-![شرح مصوّر للتثبيت](images/codex-steps.svg)
+![Codex installation](images/codex-steps.svg)
 
-## 1. حمّل المشروع
+## 1. Get the complete project
 
-استعمل [رابط النسخة الكاملة](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-source-1.0.0.zip)، أو فـGitHub اختار الفرع `photo-to-autocad` ثم **Code → Download ZIP**، وفك الضغط. افتح Terminal فالمجلد اللي فيه `README.md` و`tools` و`plugins`. خاص Python 3.10+؛ `python --version` كيبين النسخة.
+Download the [source ZIP](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-source-2.0.0.zip), extract it and open a terminal in the directory containing `README.md`, `tools` and `plugins`. Alternatively, clone the project branch using the command in the main README.
 
-## 2. ثبت الـskill
+Python 3.10 or newer is required. Check with `python --version`; use `python3` on systems without `python`, or `py -3` on Windows.
+
+## 2. Install the skill
 
 ```bash
 python tools/install_skill.py --target codex
 ```
 
-المكان الافتراضي هو `~/.agents/skills/draft-cad-from-images`. الأمر كيخدم بنفس الطريقة فـWindows وmacOS وLinux؛ استعمل `py -3` أو `python3` إذا لزم.
+The default destination is `~/.agents/skills/draft-cad-from-images`. The installer copies local files; it does not download dependencies or alter global Python packages. The visible skill name is **TSBECM 202**.
 
-للتثبيت فالمشروع الحالي فقط:
+To install only for the current project:
 
 ```bash
 python tools/install_skill.py --target codex --scope project
 ```
 
-هاد الأمر كينشئ `.agents/skills/draft-cad-from-images` تحت المجلد الحالي. فـCodex Cloud، خاص هاد الملفات تكون فالمستودع أو البيئة اللي Codex خدام فيها، والصورة تكون متاحة لنفس الجلسة. تثبيت محلي فحاسوبك ما كيثبتش نسخة فبيئة سحابية أخرى.
+For Codex Cloud, the installed skill files, image and Python environment must exist in the cloud task's repository/environment. A local installation on your computer is a separate environment.
 
-## 3. جهّز مكتبات CAD
-
-من مجلد المشروع، أنشئ بيئة Python وفعّلها حسب [الجدول فالصفحة الرئيسية](../README.md):
+## 3. Prepare Python
 
 ```bash
 python -m venv .venv
 ```
 
-فعّل `.venv` حسب نظامك، أو استعمل Python الموجود داخلها مباشرة، ومن بعد:
+Activate the environment as described in the [main README](../README.md), then run:
 
 ```bash
 python -m pip install -r requirements.txt
+python tools/cad.py doctor
 ```
 
-قول لـCodex يستعمل نفس البيئة. ما تحتاجش API key إضافي خاص بهاذ المشروع؛ تسجيل الدخول أو اشتراك المنصة مسألة مستقلة.
+Tell Codex to use this environment. This project does not require an additional project-specific API key; your platform account and subscription are separate.
 
-## 4. جرّب
+## 4. Start a drafting task
 
-فتح جلسة جديدة، اختار `$draft-cad-from-images` أو ذكر الاسم بوضوح، وارفق الصورة. تقدر تبدأ بـ`examples/plate/source.png`، وتطلب:
+Open a new agent session and attach a drawing or provide a path the task can access:
 
 ```text
 Use $draft-cad-from-images on the attached drawing.
-Create native editable DXF, a PDF preview, and a source/uncertainty note.
-Preserve all dimensions and annotations. Verify actual saved measurements.
+Create editable DXF with native dimensions, a scaled PDF preview and a
+source ledger. Preserve all readable annotations. Check the saved geometry
+and identify missing or conflicting source information.
 ```
 
-تفقد DXF وPDF، خصوصاً ربط كل كوطاسيون بالعنصر الصحيح. [ملفات النتيجة المرجعية](../examples/plate/README.md) موجودة للمقارنة.
+The bundled helper example is a tool check, not a converter for arbitrary images:
 
-## Plugin اختياري
+```bash
+python tools/cad.py example --output-dir demo-output
+```
 
-المستودع فيه `.agents/plugins/marketplace.json` وحزمة داخل `plugins/photo-to-autocad`. من جذر النسخة المحلية:
+To regenerate the larger demonstration:
+
+```bash
+python tools/build_showcase.py --output-dir workshop-output
+```
+
+## 5. Inspect the delivery
+
+Open the DXF in a CAD application. Review units, layer names, native geometry and dimensions. Compare the PDF with the source, including hole positions and dimension endpoints. Keep unresolved data visible. [Detailed review criteria](WORKFLOW.md#review-and-delivery).
+
+## Optional plugin marketplace
+
+From the repository root, in a Codex version supporting plugins:
 
 ```bash
 codex plugin marketplace add .
 ```
 
-من بعد افتح Codex واستعمل `/plugins` فنسخة كتدعم هاد الواجهة، اختار marketplace ديال Photo to AutoCAD وثبّت الحزمة، ثم افتح جلسة جديدة. الـIDE ما كيدعمش plugins حسب الوثائق الحالية؛ استعمل طريقة skill مباشرة.
+Open `/plugins`, choose **TSBECM 202**, install it and start a new session. The IDE skill route is separate from plugin support. Avoid installing duplicate copies unless you deliberately need them.
 
-ما تثبتش نفس skill بالطريقتين إلا كنت محتاج نسختين؛ يقدرو يبانوا بجوج فالاختيار.
-
-## التحديث أو الإزالة
+## Update safely
 
 ```bash
 python tools/install_skill.py --target codex --replace
 ```
 
-المثبّت كيكتب مسار النسخة الاحتياطية. للإزالة اليدوية، احذف فقط مجلد `draft-cad-from-images` اللي طبعو المثبّت، بعد ما تحتافظ بتعديلاتك. ما تحذفش مجلد skills كامل.
+If the existing copy differs, the installer requires `--replace` and keeps a backup outside the active skill directory. It prints the backup location. For removal, remove only the installed `draft-cad-from-images` directory after saving your own edits.
 
-توثيق المنصة: [مهارات Codex](https://learn.chatgpt.com/docs/build-skills) و[حزم وmarketplaces](https://developers.openai.com/plugins/build/plugins). راجع [المصادر وتاريخ المراجعة](SOURCES.md).
+The 2.0.0 rebrand keeps the skill invocation name stable. Older plugin packages used the name Photo to AutoCAD; the current plugin package is `tsbecm-202`.
+
+Official references: [Build skills](https://learn.chatgpt.com/docs/build-skills), [Plugin packages](https://developers.openai.com/plugins/build/plugins).

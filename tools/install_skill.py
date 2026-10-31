@@ -10,7 +10,7 @@ import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
 NAME = "draft-cad-from-images"
-SOURCE = ROOT / "plugins/photo-to-autocad/skills" / NAME
+SOURCE = ROOT / "plugins/tsbecm-202/skills" / NAME
 
 
 def inventory(path):

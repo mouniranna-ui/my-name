@@ -1,9 +1,8 @@
-PHOTO TO AUTOCAD — CHATGPT ATTACHMENT — 1.1.0
+TSBECM 202 — CHATGPT ATTACHMENT — 2.0.0
 
-HOW TO USE / طريقة الاستعمال
+HOW TO USE
 Open https://chatgpt.com/ and attach this text file plus your drawing images.
-Say: Follow this Photo to AutoCAD attachment to create editable DXF and a PDF.
-بالدارجة: تبع هاد الملف ورسم ليا الصور فـDXF قابل للتعديل مع PDF والكوطاسيون.
+Say: Follow this TSBECM 202 attachment to create editable DXF and a PDF.
 
 This attachment supplies instructions and source code; it installs nothing.
 Actual DXF/PDF output requires image access, Python and returned-file support.
@@ -30,8 +29,8 @@ Embedded files follow. Each exact UTF-8 body is preceded by its SHA-256.
 The file markers are packaging delimiters, not part of the embedded files.
 
 ===== BEGIN FILE: chatgpt-instructions.txt =====
-SHA256: 1d8fe7eca70ec548d198c6caece9ae0255da322a6d760d9cbaeddfb854ff3474
-Use the Photo to AutoCAD workflow for the technical drawing I attach.
+SHA256: 5e11ead556c2d6ef3f36e5cc4669c948a6c1cdc688b3e9a62c9e27d560dd2304
+Use the TSBECM 202 workflow for the technical drawing I attach.
 
 Read the drawing carefully, including rotated dimensions, witness-line endpoints, symbols, annotations and all views. Make a source ledger separating printed, calculated, standard and unresolved values. Preserve the source's technical wording and respond in my language.
 
@@ -47,13 +46,13 @@ My request: redraw the attached technical drawing with every legible dimension a
 ===== END FILE: chatgpt-instructions.txt =====
 
 ===== BEGIN FILE: SKILL.md =====
-SHA256: d3140ca4316ff380f1aa5dfa81301f33d1f3251096de485275416072dd7aa120
+SHA256: 7b975f099515123bda2432c65348e8ca5adafe384122a561b2c92ef24e081987
 ---
 name: draft-cad-from-images
-description: Redraw photographed or scanned technical drawings as editable 2D CAD with native dimensions, layers, labels, and a checked PDF preview. Use for turning a sketch, engineering drawing, steel connection, OFPPT/TSBECM exercise, or dimensioned photo into AutoCAD-compatible DXF or DWG, or verifying its dimensions. Understand cotations, cotes, plan, dessin, الكوطاسيون, القياسات, and الأوطوكاد. Do not use for artistic images, structural sizing or certification, 3D reconstruction, or generic image cleanup.
+description: Redraw photographed or scanned technical drawings as editable 2D CAD with native dimensions, layers, labels, and a checked PDF preview. Use for turning a sketch, engineering drawing, steel connection, OFPPT/TSBECM exercise, or dimensioned photo into AutoCAD-compatible DXF or DWG, or verifying its dimensions. Understand multilingual requests for dimensions, plans, drawing reconstruction and AutoCAD. Do not use for artistic images, structural sizing or certification, 3D reconstruction, or generic image cleanup.
 ---
 
-# Photo to AutoCAD
+# TSBECM 202
 
 Turn the supplied drawing into usable native CAD. Respond in the user's language; preserve the source's technical designations unless asked to translate them. Support Darija, Arabic, French, and English requests.
 

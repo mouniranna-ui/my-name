@@ -1,54 +1,52 @@
-# الاستعمال فـGemini
+# Use TSBECM 202 in Gemini
 
-[الصفحة الرئيسية](../README.md) · [English quick start](../README.en.md)
+[Project home](../README.md) · [All guides](README.md)
 
-![Gemini CLI وGemini Gem](images/gemini-steps.svg)
+![Gemini routes](images/gemini-steps.svg)
 
-## Gemini CLI: تثبيت skill حقيقية
+## Gemini CLI
 
-بعد تحميل المشروع وفك الضغط، من مجلد المشروع:
+Download and extract the complete project. From its root, run:
 
 ```bash
 python tools/install_skill.py --target gemini
 ```
 
-المثبّت كيحطها فـ`~/.gemini/skills/draft-cad-from-images`. فتح جلسة جديدة، أو استعمل داخل Gemini CLI:
+The default destination is `~/.gemini/skills/draft-cad-from-images`. Open a new session or use:
 
 ```text
 /skills reload
 /skills list
 ```
 
-يمكن كذلك استعمال المثبّت الأصلي ديال Gemini CLI من جذر المشروع:
+You can instead use Gemini CLI's native installer:
 
 ```bash
-gemini skills install ./plugins/photo-to-autocad/skills/draft-cad-from-images --scope user
+gemini skills install ./plugins/tsbecm-202/skills/draft-cad-from-images --scope user
 ```
 
-اختار طريقة واحدة. راجع طلب الإذن اللي كتبيّنو المنصة. جهّز Python والمكتبات بالخطوات فالصفحة الرئيسية، وارفق الصورة أو عطِ مساراً متاحاً للجلسة:
+Choose one installation method and review any permission prompt shown by the platform. Prepare Python and the dependencies using the [Codex/Python guide](INSTALL_CODEX.md#3-prepare-python). Provide the drawing as an attachment or an accessible file path:
 
 ```text
-Use the draft-cad-from-images skill on this drawing.
-Create editable DXF and a PDF. Read each dimension and its feature anchors,
-and identify any information that the source does not specify.
+Use draft-cad-from-images to reconstruct this technical drawing.
+Create editable DXF and a scaled PDF. Record the source dimensions,
+check their actual feature anchors, and identify unresolved information.
 ```
 
-إلا عندك نسختان بنفس الاسم فـ`.agents/skills` و`.gemini/skills`، Gemini كيستعمل ترتيب الأولوية الموثق عنده؛ تفقد `/skills list` باش تعرف المصدر اللي تحمّل.
+If several copies appear in different skill directories, inspect `/skills list` to identify the one being used. The project's installer does not install Gemini CLI or configure your Google account; follow the [official setup guide](https://geminicli.com/docs/get-started/) if needed.
 
-## Gemini فالويب أو الهاتف: Gem بالتعليمات
+## Gemini app and Gems
 
-1. من موقع Gemini، افتح **Explore Gems → New Gem**.
-2. سمّي الـGem `Photo to AutoCAD`.
-3. انسخ [gemini-gem-instructions.txt](../prompts/gemini-gem-instructions.txt) فخانة التعليمات.
-4. يمكن تزيد [portable-knowledge.txt](../prompts/portable-knowledge.txt) تحت **Knowledge**.
-5. جرّبها بالصورة، ثم اضغط **Save**. المعاينة بوحدها ما كتحفظش الـGem.
+1. Open **Explore Gems → New Gem** in a supported Gemini interface.
+2. Name the Gem **TSBECM 202**.
+3. Paste [gemini-gem-instructions.txt](../prompts/gemini-gem-instructions.txt) into its instructions.
+4. Optionally add [portable-knowledge.txt](../prompts/portable-knowledge.txt) as knowledge.
+5. Preview the workflow with a drawing, then use **Save** to keep the Gem.
 
-![الصورة اللي تقدر تبدأ بها](../examples/plate/source.png)
+A Gem supplies instructions and knowledge; it is not a native CLI skill installation and does not itself install CAD libraries. If the app cannot execute Python and return files, request the source ledger and complete runnable generator. Written code is not the same as a created, checked DXF.
 
-الـGem كتستعمل التعليمات والمعرفة؛ هادي ماشي نسخة Gemini CLI وماشي تثبيت للمكتبات. إلا ما قدرتش تنفّذ Python وترجع ملفات، خاصها تسلّم لك برنامجاً وجدول القياسات باش تشغّلو محلياً. ما نعتابروش كوداً مكتوباً ملف DXF تم توليدو واختبارو.
+## Check the result
 
-## تثبيت Gemini CLI نفسه
+Use the same [delivery review](WORKFLOW.md#review-and-delivery) as in other environments. Do not assume that a platform name or a successful instruction upload guarantees equivalent execution capabilities.
 
-هاد المشروع كيضيف skill لـGemini CLI؛ ما كيثبتش Gemini CLI ولا كيضبط حساب Google. اتبع [دليل البداية الرسمي](https://geminicli.com/docs/get-started/)، ثم رجع لخطوات هاد الصفحة.
-
-المراجع: [Agent Skills](https://geminicli.com/docs/cli/skills/)، [أوامر CLI](https://geminicli.com/docs/cli/cli-reference/)، [إنشاء Gems](https://support.google.com/gemini/answer/15235603?hl=en).
+Official references: [Agent skills](https://geminicli.com/docs/cli/skills/), [CLI reference](https://geminicli.com/docs/cli/cli-reference/), [Creating Gems](https://support.google.com/gemini/answer/15235603?hl=en).

@@ -1,14 +1,14 @@
 {
-  "name": "photo-to-autocad",
+  "name": "tsbecm-202",
   "interface": {
-    "displayName": "Photo to AutoCAD"
+    "displayName": "TSBECM 202"
   },
   "plugins": [
     {
-      "name": "photo-to-autocad",
+      "name": "tsbecm-202",
       "source": {
         "source": "local",
-        "path": "./plugins/photo-to-autocad"
+        "path": "./plugins/tsbecm-202"
       },
       "policy": {
         "installation": "AVAILABLE",

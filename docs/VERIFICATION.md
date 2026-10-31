@@ -1,40 +1,42 @@
-# شنو تجرّب فعلياً؟
+# Verification and evidence
 
-هاد الوثيقة كتفرّق بين اختبار الكود، قراءة الرسم، ودعم المنصات.
+[Project home](../README.md) · [Drawing workflow](WORKFLOW.md)
 
-| الجانب | الدليل |
+The project separates numerical checks, file integrity, visual review, source interpretation and native application testing.
+
+## Industrial workshop
+
+The [specification](../examples/industrial-workshop/specification.json) is a synthetic drafting brief. Each drawing has a saved check manifest and an audit report. The [combined verification record](../examples/industrial-workshop/verification.json) records sheet results and independent feature checks.
+
+Checks cover native dimensions, hole counts and radii, plate hole centres, roof slopes, bay totals, the derived ridge height, millimetre units and plot settings. PDF pages are rendered from the DXF and visually inspected. The example does not establish photo-reading accuracy or structural adequacy.
+
+## Plate reconstruction fixture
+
+The independent [plate example](../examples/plate/README.md) uses a 160 × 280 mm source image with eight diameter-14 holes and a 16 × 54 mm slot. Fifteen native dimensions were checked. Thickness, material and manufacturing tolerances remain unspecified. The vector PDF uses A3 portrait at 1:1.
+
+## Automated checks
+
+| Check group | Coverage |
 | --- | --- |
-| أدوات CAD | 9 اختبارات: ملفات محفوظة، كوطاسيون خاطئة، override مزيف، ثقوب، ميل، slots، fillets، وحدات، سلم وPDF |
-| التجربة على صورة جديدة | مصدر مصطنع مستقل؛ 15 كوطاسيون أصلية؛ 0 أخطاء و0 إصلاحات audit |
-| هندسة المثال | لوحة 160 × 280، ثقوب Ø14 فـ(40/120، 35/105/175/245)، slot بعرض 16 وطول إجمالي 54 |
-| المعاينة | PDF متجهي، A3 عمودي، 1:1؛ مراجعة بصرية للورقة والتفاصيل |
-| المثبّت | تثبيت وإعادة تشغيل بدون تغييرات؛ رفض écrasement؛ backup قبل التحديث؛ رفض symlink |
-| ملف ChatGPT الشامل 1.1.0 | 9 ملفات مدمجة مطابقة للمصدر وبصمات SHA-256؛ استخراج الأدوات وتشغيل doctor نجح محلياً |
-| اختبارات التوزيع 1.1.0 | 5 اختبارات محلية نجحت؛ تشمل استخراج TXT وسلامة الحزم والمثبّت |
-| حزم التحميل | فحص المداخل والروابط المحلية، استبعاد caches والمسارات الخاصة |
-| Autodesk AutoCAD | ما تدارش اختبار داخل التطبيق فبيئة التطوير الحالية |
-| Codex/Gemini CLI مثبتان فعلياً | الأوامر موثقة؛ اختبار جلسة تسجيل دخول على هاد المنصات ما تدارش هنا |
-| ChatGPT/Gemini app | خطوات موثقة وتعليمات محمولة؛ الإمكانيات كتحتاج تحقق فحساب المستخدم |
-
-التوافق الموثق ماشي شهادة أن كل إصدار وكل حساب تجرّب فعلياً.
-
-## تشغيل الاختبارات
+| CAD helper tests | Saved dimensions, invalid overrides, missing checks, hole geometry, slopes, slots, fillets, units, plot scale and PDF |
+| Distribution tests | Installer idempotency, backup behavior, symlink refusal, archive entry points and exact ChatGPT attachment extraction |
+| Repository verifier | Local documentation links, plugin metadata, icons, YAML, SVGs, workflow files and attachment freshness |
+| Showcase build | Reopened dimensions, hole positions, bay totals and ridge height against explicit fixture values |
 
 ```bash
 python -m pip install -r requirements-dev.txt
+python tools/build_chatgpt_kit.py
 python tools/verify_repository.py
 python -m unittest discover -s tests -v
-python plugins/photo-to-autocad/skills/draft-cad-from-images/scripts/test_cad_tools.py
+python plugins/tsbecm-202/skills/draft-cad-from-images/scripts/test_cad_tools.py
+python tools/build_showcase.py --output-dir workshop-output
 ```
 
-إعادة بناء الحزم:
+## Limits of the evidence
 
-```bash
-python tools/build_release.py
-```
+- No native Autodesk AutoCAD application test was performed in this development environment.
+- Live logged-in Codex, Gemini and public ChatGPT plugin installations were not tested across every account or platform.
+- Configured CI workflows are not proof that a hosted workflow run completed.
+- No load analysis, member sizing, connection design or fabrication approval was performed.
 
-الملفات كتخرج فـ`dist/`. إعداد CI مخصص لتشغيل الفحوص على Linux؛ هاد الوصف ما كيأكدش نجاح تشغيل على GitHub؛ ما ندّعيوش اختبار Windows/macOS إلى ما تداروش فعلياً.
-
-## حدود المثال
-
-الصورة كتصرّح أن السُّمك غير معطى. المادة والتفاوتات التصنيعية حتى هي غير معطاة. بقوا مبيّنين كناقصين، وما تعوّضوش بقيم مفترضة. المثال تعليمي وليس مخطط تصنيع معتمد.
+A passing DXF audit does not certify missing source information. Review the actual measurements, their anchors and the final sheets.

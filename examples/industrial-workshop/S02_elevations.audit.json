@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "issues": [],
+  "audit_errors": 0,
+  "audit_fixes": 0,
+  "native_dimensions": 11,
+  "measurements": [
+    {
+      "id": "frame.span",
+      "measured": 24000.0,
+      "expected": 24000.0
+    },
+    {
+      "id": "frame.eaves",
+      "measured": 6500.0,
+      "expected": 6500.0
+    },
+    {
+      "id": "frame.ridge",
+      "measured": 8299.999999999996,
+      "expected": 8300.0
+    },
+    {
+      "id": "elevation.bay.1",
+      "measured": 6000.0,
+      "expected": 6000.0
+    },
+    {
+      "id": "elevation.bay.2",
+      "measured": 6000.0,
+      "expected": 6000.0
+    },
+    {
+      "id": "elevation.bay.3",
+      "measured": 6000.0,
+      "expected": 6000.0
+    },
+    {
+      "id": "elevation.bay.4",
+      "measured": 6000.0,
+      "expected": 6000.0
+    },
+    {
+      "id": "elevation.bay.5",
+      "measured": 6000.0,
+      "expected": 6000.0
+    },
+    {
+      "id": "elevation.bay.6",
+      "measured": 6000.0,
+      "expected": 6000.0
+    },
+    {
+      "id": "elevation.length",
+      "measured": 36000.0,
+      "expected": 36000.0
+    },
+    {
+      "id": "elevation.height",
+      "measured": 6500.0,
+      "expected": 6500.0
+    }
+  ],
+  "feature_checks": [
+    "roof.left_slope",
+    "roof.right_slope"
+  ],
+  "source_fidelity": "requires visual source-and-anchor review",
+  "native_autocad_test": "not performed by this helper"
+}

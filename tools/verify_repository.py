@@ -38,7 +38,7 @@ for md in sorted(ROOT.rglob("*.md")):
         if not contained(resolved) or not resolved.exists():
             issues.append(f"Broken local link in {md.relative_to(ROOT)}: {target}")
 
-plugin = ROOT / "plugins/photo-to-autocad"
+plugin = ROOT / "plugins/tsbecm-202"
 manifest = json.loads((plugin / "plugin.json").read_text())
 ui = manifest["extensions"]["com.openai"]["interface"]
 if manifest["$schema"] != "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json":

@@ -82,9 +82,9 @@ class DistributionTests(unittest.TestCase):
                 elif "-skill-" in filename:
                     self.assertIn("draft-cad-from-images/SKILL.md", names)
                 else:
-                    self.assertIn("photo-to-autocad/README.md", names)
-                    self.assertIn("photo-to-autocad/.agents/plugins/marketplace.json", names)
-                    self.assertIn("photo-to-autocad/prompts/Photo-to-AutoCAD-ChatGPT.txt", names)
+                    self.assertIn("tsbecm-202/README.md", names)
+                    self.assertIn("tsbecm-202/.agents/plugins/marketplace.json", names)
+                    self.assertIn("tsbecm-202/prompts/TSBECM-202-ChatGPT.txt", names)
 
     def test_chatgpt_attachment_can_be_extracted_without_changing_source(self):
         content = chatgpt_kit.render()

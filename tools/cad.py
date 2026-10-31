@@ -3,7 +3,7 @@
 from pathlib import Path
 import sys
 
-SCRIPTS = Path(__file__).resolve().parents[1] / "plugins/photo-to-autocad/skills/draft-cad-from-images/scripts"
+SCRIPTS = Path(__file__).resolve().parents[1] / "plugins/tsbecm-202/skills/draft-cad-from-images/scripts"
 sys.path.insert(0, str(SCRIPTS))
 from cad_tools import main
 

@@ -26,7 +26,7 @@ def guide(name,title,subtitle,cards,footer):
     parts += [f'<text x="60" y="465" fill="#a9bfd5" font-size="18">{escape(footer)}</text>','</g></svg>']
     (OUT/name).write_text('\n'.join(parts),encoding='utf-8')
 
-guide('workflow.svg','PHOTO TO AUTOCAD','An image-based drafting workflow with explicit evidence and editable output.',[
+guide('workflow.svg','TSBECM 202','An image-based drafting workflow with explicit evidence and editable output.',[
  ('Read the drawing',['Inspect every view','Read dimensions upright','Record unclear features']),
  ('Build native CAD',['Draw at full size','Use layers and dimensions','Keep measured values']),
  ('Check the result',['Reopen and audit DXF','Compare source anchors','Inspect PDF visually']),

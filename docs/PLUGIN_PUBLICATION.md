@@ -1,8 +1,8 @@
 # ChatGPT plugin: package and publication status
 
-[الرئيسية](../README.md) · [استعملها بلا تثبيت الآن](CHATGPT_START.md)
+[Project home](../README.md) · [Use in ChatGPT without installation](CHATGPT_START.md)
 
-Updated: **2026-10-31**, package **1.1.0**.
+Updated: **2026-10-31**, package **2.0.0**.
 
 | Route | Current status |
 | --- | --- |
@@ -11,15 +11,15 @@ Updated: **2026-10-31**, package **1.1.0**.
 | Account installation through Plugin Creator | Not completed in this workflow; the account creation tool was unavailable |
 | Public ChatGPT Plugins Directory | Not submitted or published; no verified listing URL exists |
 
-**[Download the plugin package](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/photo-to-autocad-plugin-1.1.0.zip)**. This is an implementation package, not a completed public submission. Downloading it does not install it into a ChatGPT account.
+**[Download the plugin package](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-plugin-2.0.0.zip)**. This is an implementation package, not a completed public submission. Downloading it does not install it into a ChatGPT account.
 
 ## What is implemented
 
-- Name: **Photo to AutoCAD**; category: **Productivity**.
+- Name: **TSBECM 202**; category: **Productivity**.
 - A `draft-cad-from-images` skill, three technical references, Python helpers and the supplied icon.
 - Editable DXF, native dimensions, layers and text; checked PDF previews when the host can execute Python.
-- Darija/Arabic, French and English usage, with three listing prompts and separate review prompts.
-- Release notes and Arabic/French listing translations embedded in `plugin.json`.
+- English documentation and listing prompts; the workflow can respond in the user's requested language.
+- Release notes and English listing text embedded in `plugin.json`.
 - A synthetic example, automated CAD checks and distribution checks. The private drawing supplied during development is not included.
 
 This is a **skills-only** plugin. It has no hosted MCP server, external account login or drawing-upload endpoint. It relies on the host's tools. It does not install Python, dependencies, AutoCAD or a licence on a user's computer. A live installation in ChatGPT and a directory review have not been tested.

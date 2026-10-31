@@ -1,5 +1,5 @@
 interface:
-  display_name: "Photo to AutoCAD"
+  display_name: "TSBECM 202"
   short_description: "Turn drawing photos into editable, dimensioned CAD"
   icon_small: "./assets/photo-to-autocad.png"
   icon_large: "./assets/photo-to-autocad.png"

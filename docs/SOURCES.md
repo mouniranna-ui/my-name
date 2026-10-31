@@ -1,17 +1,19 @@
-# المصادر الرسمية
+# Official references
 
-مراجعة تعليمات المنصات: **2026-10-31** لإرشادات ChatGPT والنشر؛ باقي المصادر راجعات فـ2026-10-25. الواجهات والإمكانيات تقدر تتبدّل؛ إذا كان فرق، ارجع للوثيقة الرسمية. هاد المشروع كيصف ما يدعمه الكود وما وثقته المنصات، وما كيدّعيش اختباراً مباشراً ما تدارش.
+[Documentation index](README.md)
 
-| الموضوع | المصدر |
+OpenAI workflow and publication guidance was checked on **2026-10-31**. Gemini references were checked on **2026-10-25**. Interfaces and availability can change; consult the linked primary documentation if your environment differs.
+
+| Topic | Official source |
 | --- | --- |
-| Skills: صيغة الملفات، مسارات Codex، `$` و`@` | [OpenAI: Build skills](https://learn.chatgpt.com/docs/build-skills) |
-| Plugins والمنصات المدعومة | [OpenAI: Plugins](https://learn.chatgpt.com/docs/plugins) |
-| Plugin portable وmarketplace محلي | [OpenAI: Package your plugin](https://developers.openai.com/plugins/build/plugins) |
-| الفرق بين skill وplugin | [OpenAI: Skills & Plugins](https://learn.chatgpt.com/docs/skills-and-plugins) |
-| نشر الإضافة والهوية والمراجعة | [OpenAI: Submit plugins](https://developers.openai.com/plugins/deploy/submission) |
-| Gemini CLI، مسارات skills وأوامر الإدارة | [Google: Agent Skills](https://geminicli.com/docs/cli/skills/) |
-| أوامر Gemini CLI | [Google: CLI reference](https://geminicli.com/docs/cli/cli-reference/) |
-| إنشاء Gem وإضافة المعرفة | [Google: Tips for creating custom Gems](https://support.google.com/gemini/answer/15235603?hl=en) |
-| إعداد Gemini CLI | [Google: Get started](https://geminicli.com/docs/get-started/) |
+| Skill format and invocation | [OpenAI: Build skills](https://learn.chatgpt.com/docs/build-skills) |
+| Supported plugin surfaces | [OpenAI: Plugins](https://learn.chatgpt.com/docs/plugins) |
+| Portable packages and local marketplaces | [OpenAI: Package your plugin](https://developers.openai.com/plugins/build/plugins) |
+| Skills and plugins | [OpenAI: Skills & Plugins](https://learn.chatgpt.com/docs/skills-and-plugins) |
+| Publisher identity, review and release | [OpenAI: Submit plugins](https://developers.openai.com/plugins/deploy/submission) |
+| Gemini CLI skills | [Google: Agent Skills](https://geminicli.com/docs/cli/skills/) |
+| Gemini CLI commands | [Google: CLI reference](https://geminicli.com/docs/cli/cli-reference/) |
+| Gemini Gems | [Google: Creating Gems](https://support.google.com/gemini/answer/15235603?hl=en) |
+| Gemini CLI setup | [Google: Get started](https://geminicli.com/docs/get-started/) |
 
-الأوامر `tools/install_skill.py` و`tools/cad.py` و`tools/build_release.py` خاصة بهاد المستودع. صور الخطوات فـ`docs/images` رسوم توضيحية أصلية، وليست لقطات مزعومة من تطبيقات المنصات. صور المثال ناتجة عن رسم تقني مصطنع ومخرجات DXF الفعلية.
+Commands under `tools/` are maintained by this repository. Instructional images are original diagrams, not screenshots of signed-in applications. CAD previews are rendered from the accompanying synthetic drawings. No structural standard or member design is implied by the workshop's illustrative geometry.

@@ -1,1 +1,1 @@
--r plugins/photo-to-autocad/skills/draft-cad-from-images/scripts/requirements.txt
+-r plugins/tsbecm-202/skills/draft-cad-from-images/scripts/requirements.txt

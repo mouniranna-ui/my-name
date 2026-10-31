@@ -1,57 +1,68 @@
-# خدم بها مباشرة فـChatGPT — بلا تثبيت
+# Use TSBECM 202 directly in ChatGPT
 
-[الصفحة الرئيسية](../README.md) · [تفاصيل الإضافة](INSTALL_CHATGPT.md) · [English](../README.en.md) · [Français](../README.fr.md)
+[Project home](../README.md) · [All guides](README.md) · [Plugin routes](INSTALL_CHATGPT.md)
 
-**[افتح ChatGPT](https://chatgpt.com/)**، زيد صورة الرسم، وانسخ الطلب لتحت. ما تحتاج لا Git، لا Terminal، لا تثبيت skill فالحاسوب. رابط ChatGPT كيفتح الشات؛ ما كيحمّلش التعليمات تلقائياً.
+This route requires no local skill installation, Git command or terminal. You provide the instructions and the drawing in a normal conversation. Actual CAD file generation requires a chat that can read images, run Python and return files.
 
-![الاستعمال المباشر فـChatGPT في أربع خطوات](images/chatgpt-direct.svg)
+![Direct ChatGPT workflow](images/chatgpt-direct.svg)
 
-## البداية بالنسخ واللصق
+## Option A: one attachment with the full workflow
 
-انسخ النص كامل وزيد صورة واضحة فيها الرسم والقياسات:
+1. Download [TSBECM-202-ChatGPT.txt](../prompts/TSBECM-202-ChatGPT.txt) using the download button on its GitHub file page. If your browser displays the text, save it as a `.txt` file.
+2. Open [ChatGPT](https://chatgpt.com/) and start a new conversation.
+3. Attach the TXT file and the drawing images. Include every view and detail needed to understand the dimensions.
+4. Send the request below.
 
 ```text
-خدم بطريقة Photo to AutoCAD على الصور المرفقة وجاوبني بالدارجة.
-بغيت تعاود ترسمها فـDXF قابل للتعديل فـAutoCAD، مع PDF واضح للطباعة.
+Use the attached TSBECM 202 workflow to reconstruct my technical drawing.
+Read every view, dimension and annotation. Create a source ledger before
+building geometry, and distinguish written, derived and unresolved values.
 
-قرا جميع المشاهد والكوطاسيون والعبارات، حتى النصوص المدورة والصغيرة.
-بدا بجدول كيميز بين القياسات المكتوبة، المحسوبة، واللي ما واضحةش.
-راجع مجموع القياسات، عدد الثقوب ومواقعها، الأقطار، الميول وتوافق المشاهد.
-ما تستنتجش قياس مؤكد من حجم الصورة، وما تخمّنش رقم ناقص أو متناقض.
+If you can execute Python and return files, create native editable DXF with
+organized layers and DIMENSION entities, plus a scaled PDF preview.
+Reopen and audit the saved DXF, check actual measurements and feature anchors,
+and visually inspect the PDF. Return the files and an uncertainty note.
 
-إلا كتقدر تشغّل Python وترجع ملفات، استعمل ezdxf أو أداة CAD متاحة.
-رسم بالحجم الحقيقي وبوحدات واضحة، بعناصر CAD أصلية وطبقات منظمة،
-وزيد TEXT/MTEXT وDIMENSION أصلية قابلة للتعديل لجميع القياسات المقروءة.
-عاود حل DXF من بعد الحفظ، دير audit، وقارن القياسات الفعلية مع المصدر.
-خرّج PDF بسلم معلوم، عاينو، وصلح تداخل النصوص والكوطاسيون قبل التسليم.
-
-سلّم DXF وPDF وملاحظة قصيرة بالقياسات الناقصة والفحوص اللي درتي فعلاً.
-إلا ما كاينش تنفيذ الكود، عطيني جدول القياسات وبرنامج Python كامل مع
-المكتبات وأوامر التشغيل. ما تقولش صنعت ملف إلا كان موجود وقابل للتحميل.
-DWG خاصو تحويل بأداة CAD حقيقية؛ ما تبدلش امتداد DXF وتسميه DWG.
-هاد الخدمة إعادة رسم؛ ماشي مصادقة هندسية وما تضمنش 100% من صورة ناقصة.
+If execution is unavailable, explain that limitation and provide a complete
+Python generator, dependencies and run commands. Do not claim that an output
+file exists or was tested unless it was actually created and checked.
 ```
 
-## باش يستعمل نفس أدوات المشروع
+The attachment includes the actual workflow, three technical references, dependency list and CAD helper source. It installs nothing and does not connect to a separate project server.
 
-1. حمّل [Photo-to-AutoCAD-ChatGPT.txt](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/prompts/Photo-to-AutoCAD-ChatGPT.txt). إلا تحل فالمتصفح، اختار حفظ الملف أو انسخ محتواه.
-2. افتح [ChatGPT](https://chatgpt.com/) وارفع ملف TXT مع صور الرسم، باستعمال زر إضافة الملفات المتاح فحسابك.
-3. كتب: **«تبع ملف Photo to AutoCAD المرفق ورسم ليا هاد الصور فـDXF مع PDF والكوطاسيون كاملة.»**
+## Option B: paste instructions, then attach your drawing
 
-ملف TXT واحد فيه التعليمات، مراجع قراءة الرسومات، لائحة مكتبات Python وشفرة `cad_tools.py`. رفعه للشات ما كيحتاجش تثبيت محلي. كيبقى خاص المحادثة تقدر تقرا المرفقات وتشغّل Python وترد الملفات. إلا كانت كترجع غير شرح، طلب منها توضح واش التنفيذ متاح؛ تقدر تشغّل الكود اللي خرجاتو فـ[Codex](INSTALL_CODEX.md).
+Copy [chatgpt-instructions.txt](../prompts/chatgpt-instructions.txt) into the conversation and attach your drawing. This is useful when downloading the larger TXT is inconvenient. The short prompt supplies the process; the full TXT also supplies the helper code and technical references.
 
-## شنو خاصك تستلم؟
+## Prepare good source images
 
-| الملف | كيفاش تتأكد |
+- Include the complete sheet before close-ups so the assistant can connect details to the correct view.
+- Keep the camera as square to the page as possible and avoid glare or shadows over dimensions.
+- Add close-ups of faint numbers, bolt patterns, profile labels and dimension endpoints.
+- State the intended units if the sheet does not make them clear.
+- Upload only material you are authorised to share with the selected host.
+
+See the [drawing workflow](WORKFLOW.md) for how uncertain source information is handled.
+
+## Check the result
+
+| Output | What to inspect |
 | --- | --- |
-| DXF | فيه خطوط وأقواس وثقوب وطبقات وكوطاسيون أصلية؛ ماشي صورة ملصقة |
-| PDF | الكتابة مقروءة، السلم واضح، والكوطاسيون ما متداخلاش |
-| ملاحظة التحقق | كتذكر الوحدات، الفحوص المنجزة والقياسات اللي باقية ناقصة |
+| Editable DXF | Native geometry, layers, text and measured dimension entities |
+| PDF preview | Clear text, complete sheet, stated scale and no overlapping dimensions |
+| Source ledger | Values linked to the source and feature endpoints |
+| Verification note | Checks actually performed and information still unresolved |
 
-يمكن تجرّب على [صورة المثال](../examples/plate/source.png) وتقارن مع [معاينة النتيجة](../examples/plate/preview.png). المثال مصطنع ومخصص للتجربة.
+Open the DXF in your CAD application. If DWG is needed, use a real CAD conversion or AutoCAD `SAVEAS`. Do not rename the extension.
 
-## واش الإضافة راه فدليل ChatGPT؟
+## If the assistant only gives an explanation
 
-**حالياً: التعليمات وملف TXT وحزمة Plugin متاحة فـGitHub. ما كاينش بعد رابط إدراج عمومي موثّق داخل دليل ChatGPT.** هاد الطريقة المباشرة كتخدم بتعليمات المحادثة؛ ما كتحتاجش تنتظر نشر الإضافة. إنشاء الملفات كيبقى تابعاً لأدوات الحساب.
+Ask whether Python execution and file output are available in that conversation. If they are, ask it to run the generator and provide the actual files. If not, run the returned code in the documented [Codex/Python environment](INSTALL_CODEX.md). Pasting instructions cannot enable tools that the account does not have.
 
-[حالة وتجهيز نشر الإضافة](PLUGIN_PUBLICATION.md) · [حل المشاكل](TROUBLESHOOTING.md)
+## Try an example first
+
+Attach the [synthetic plate image](../examples/plate/source.png) and compare the result with the [reference example](../examples/plate/README.md). The [workshop drawing set](../examples/industrial-workshop/README.md) demonstrates a larger package generated from a dimensioned brief.
+
+## Plugin availability
+
+The downloadable plugin package is available in this repository. There is no verified public ChatGPT Plugins Directory listing yet. The direct-chat route works through attached instructions and does not require a directory listing. [Publication status](PLUGIN_PUBLICATION.md).

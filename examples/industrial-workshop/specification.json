@@ -1,0 +1,16 @@
+{
+  "project": "TSBECM 202 - Industrial Workshop",
+  "provenance": "Synthetic educational drafting fixture; not a client project or structural design",
+  "units": "mm",
+  "span": 24000,
+  "length": 36000,
+  "bay_spacing": 6000,
+  "frame_count": 7,
+  "eaves_height": 6500,
+  "roof_slope_percent": 15,
+  "purlin_plan_spacing": 2400,
+  "graphic_member_depth": 300,
+  "base_plate": {"width": 500, "height": 500, "hole_diameter": 30, "edge_distance": 90},
+  "end_plate": {"width": 320, "height": 600, "hole_diameter": 26, "x_centres": [70, 250], "y_centres": [60, 220, 380, 540]},
+  "not_defined": ["member sizing", "loads", "material grades", "weld sizes", "bolt grades", "plate thicknesses", "foundations", "manufacturing tolerances"]
+}

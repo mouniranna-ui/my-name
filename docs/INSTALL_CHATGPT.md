@@ -1,45 +1,43 @@
-# Photo to AutoCAD داخل ChatGPT
+# TSBECM 202 in ChatGPT
 
-[الصفحة الرئيسية](../README.md) · **[ابدأ بلا تثبيت](CHATGPT_START.md)** · [English](../README.en.md)
+[Project home](../README.md) · [Direct-chat quick start](CHATGPT_START.md) · [All guides](README.md)
 
-![طرق استعمال Photo to AutoCAD داخل ChatGPT](images/chatgpt-steps.svg)
+![ChatGPT routes](images/chatgpt-steps.svg)
 
-## 1. الاستعمال المباشر من الويب أو الهاتف
+## Choose a route
 
-افتح [ChatGPT](https://chatgpt.com/)، زيد صورة الرسم، وانسخ [الطلب الجاهز](CHATGPT_START.md). تقدر تزيد [ملف TXT الشامل](../prompts/Photo-to-AutoCAD-ChatGPT.txt) باش تعطيه التعليمات والأدوات فمرفق واحد. ما تحتاجش تثبيت فالحاسوب.
+| Route | What it provides | Status |
+| --- | --- | --- |
+| Direct chat | Instructions and optional helper source attached to the conversation | Available now; host execution tools are required for files |
+| Local desktop marketplace | A reusable plugin in a supported local ChatGPT/Codex setup | Package supplied; availability depends on the local client |
+| Public Plugins Directory | A discoverable account-installed plugin | Not submitted or published |
 
-```text
-تبع ملف Photo to AutoCAD المرفق وقرا هاد الرسم.
-صنع DXF قابل للتعديل بجميع القياسات المقروءة والعبارات، ومعاه PDF.
-راجع الملفات فعلياً وبيّن ليا شنو باقي ناقص أو غير واضح.
-```
+## Direct chat: no local installation
 
-هاد المسار كيعطي تعليمات وأدوات للمحادثة. إنشاء الملفات كيحتاج قراءة الصور، تنفيذ Python وإمكانية إرجاع الملفات. إلا هاد الإمكانيات ما متوفراش، النتيجة تكون جدول القياسات وبرنامج كامل قابل للتشغيل. [شرح بالصور وخطوات بسيطة](CHATGPT_START.md).
+Follow the [illustrated quick start](CHATGPT_START.md). Attach your drawing with [TSBECM-202-ChatGPT.txt](../prompts/TSBECM-202-ChatGPT.txt), then ask for editable DXF, a PDF and a record of unresolved dimensions.
 
-## 2. Plugin داخل دليل ChatGPT
+An attached TXT or ZIP is not plugin installation. Instructions alone do not add image access, Python execution or file output capabilities.
 
-الاسم: **Photo to AutoCAD**. الحزمة كتحتوي skill `draft-cad-from-images`، التعليمات، أدوات DXF/PDF والأيقونة المختارة. ما كتحتاجش حساباً فخدمة خارجية خاصة بالمشروع، وما فيهاش MCP server.
+## Supported local desktop setup
 
-**الحالة الحالية: الحزمة مبنية ومتاحة للتحميل؛ لم يتم تقديمها أو نشرها بعد فالدليل العمومي.** ما كاينش رابط «ثبت الآن» للإضافة حتى يتوثق الإدراج الحقيقي. [حالة النشر والتجهيز](PLUGIN_PUBLICATION.md).
-
-من بعد الموافقة والنشر، المستخدم يفتح **Plugins**، يلقى الإضافة، يثبتها، ويختارها أو يختار الـskill باستعمال `@`. هادي خطوات ما بعد النشر، ماشي إعلان أن الإدراج موجود دابا. إعدادات الحساب والمنصة كتحدد الأدوات المتاحة.
-
-## 3. Plugin محلي فبيئة desktop مدعومة
-
-المشروع فيه marketplace جاهز:
+The project contains a local marketplace and a portable plugin:
 
 - `.agents/plugins/marketplace.json`
-- `plugins/photo-to-autocad/plugin.json`
-- `plugins/photo-to-autocad/skills/draft-cad-from-images/`
+- `plugins/tsbecm-202/plugin.json`
+- `plugins/tsbecm-202/skills/draft-cad-from-images/`
 
-فتح مجلد المشروع فبيئة محلية مدعومة من ChatGPT desktop. أعد تشغيل التطبيق إذا ما ظهرش marketplace، ثم افتح **Plugins** واختار **Photo to AutoCAD** من المصدر المحلي وثبّتو. افتح محادثة جديدة واختار الـskill أو الـplugin بـ`@`.
+Open the extracted repository in a supported local ChatGPT/Codex desktop environment. Use **Plugins** to find the local **TSBECM 202** marketplace and install the plugin. If your version does not expose local marketplaces, use direct chat or the [Codex CLI route](INSTALL_CODEX.md). Local installation in one environment does not install the plugin in every web or mobile account.
 
-إلا ما ظهرتش marketplaces محلية فنسختك، استعمل [الطريقة المباشرة](CHATGPT_START.md) أو [Codex CLI](INSTALL_CODEX.md). رفع ZIP فمحادثة عادية ما كيُثبتش Plugin، والنشر فـGitHub ما كيديرش إدراج تلقائي فدليل ChatGPT.
+After installation, start a fresh conversation and select the plugin or its skill using `@` where supported. The technical skill name remains `draft-cad-from-images`.
 
-## مثال المخرجات
+## Future public directory listing
 
-![معاينة مثال DXF](../examples/plate/preview.png)
+The plugin is a skills-only package: no hosted MCP server or separate project login is provided. It still relies on the host's file and Python tools. The official submission process requires the appropriate publisher identity, metadata and applicable checks.
 
-طلب DXF الأصلي وPDF، وراجع ملاحظة المعلومات الناقصة. DWG كيحتاج تطبيق CAD أو محوّل حقيقي. المشروع ما كيثبتش AutoCAD وما كيمنحش رخصتو.
+When a genuine listing is published, this guide will link to it. Only then should users search for and install **TSBECM 202** from the public directory. [Current publication status and remaining work](PLUGIN_PUBLICATION.md).
 
-المراجع الرسمية: [Plugins](https://learn.chatgpt.com/docs/plugins) · [تغليف الإضافة](https://developers.openai.com/plugins/build/plugins) · [النشر والمراجعة](https://developers.openai.com/plugins/deploy/submission).
+## Expected deliverables
+
+Ask for the actual DXF, a scaled PDF preview and a verification note. Compare the drawing with the source, especially the feature anchors of each dimension. The plugin does not install Autodesk AutoCAD or provide a licence. Native AutoCAD application testing must be reported separately from a DXF audit.
+
+Official references: [Plugins](https://learn.chatgpt.com/docs/plugins), [Package format](https://developers.openai.com/plugins/build/plugins), [Submission](https://developers.openai.com/plugins/deploy/submission).

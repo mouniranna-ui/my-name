@@ -1,4 +1,4 @@
-Use the Photo to AutoCAD workflow for the technical drawing I attach.
+Use the TSBECM 202 workflow for the technical drawing I attach.
 
 Read the drawing carefully, including rotated dimensions, witness-line endpoints, symbols, annotations and all views. Make a source ledger separating printed, calculated, standard and unresolved values. Preserve the source's technical wording and respond in my language.
 

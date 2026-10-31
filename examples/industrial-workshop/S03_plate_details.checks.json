@@ -1,0 +1,312 @@
+{
+  "schema": 1,
+  "units": 4,
+  "title": "TSBECM 202 | Dimensioned plate patterns",
+  "dimensions": [
+    {
+      "id": "base.width",
+      "handle": "BA",
+      "expected": 500.0,
+      "source": "Synthetic specification.json: base.width",
+      "status": "source",
+      "anchors": {
+        "start": [
+          350,
+          600
+        ],
+        "end": [
+          850,
+          600
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "base.height",
+      "handle": "C9",
+      "expected": 500.0,
+      "source": "Synthetic specification.json: base.height",
+      "status": "source",
+      "anchors": {
+        "start": [
+          350,
+          600
+        ],
+        "end": [
+          350,
+          1100
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "base.edge",
+      "handle": "D8",
+      "expected": 90.0,
+      "source": "Synthetic specification.json: base.edge",
+      "status": "source",
+      "anchors": {
+        "start": [
+          350,
+          1100
+        ],
+        "end": [
+          440,
+          1100
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "base.pitch",
+      "handle": "E7",
+      "expected": 320.0,
+      "source": "Synthetic specification.json: base.pitch",
+      "status": "derived",
+      "anchors": {
+        "start": [
+          440,
+          1100
+        ],
+        "end": [
+          760,
+          1100
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "base.hole_diameter",
+      "handle": "F6",
+      "expected": 30.0,
+      "source": "specification.json base_plate.hole_diameter",
+      "status": "source",
+      "anchors": null,
+      "tolerance": 1e-06
+    },
+    {
+      "id": "end.width",
+      "handle": "118",
+      "expected": 320.0,
+      "source": "Synthetic specification.json: end.width",
+      "status": "source",
+      "anchors": {
+        "start": [
+          1450,
+          1200
+        ],
+        "end": [
+          1770,
+          1200
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "end.height",
+      "handle": "127",
+      "expected": 600.0,
+      "source": "Synthetic specification.json: end.height",
+      "status": "source",
+      "anchors": {
+        "start": [
+          1770,
+          600
+        ],
+        "end": [
+          1770,
+          1200
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "end.column_pitch",
+      "handle": "136",
+      "expected": 180.0,
+      "source": "Synthetic specification.json: end.column_pitch",
+      "status": "derived",
+      "anchors": {
+        "start": [
+          1520,
+          600
+        ],
+        "end": [
+          1700,
+          600
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "end.side_edge",
+      "handle": "145",
+      "expected": 70.0,
+      "source": "Synthetic specification.json: end.side_edge",
+      "status": "source",
+      "anchors": {
+        "start": [
+          1450,
+          600
+        ],
+        "end": [
+          1520,
+          600
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "end.row_chain.0",
+      "handle": "154",
+      "expected": 60.0,
+      "source": "Synthetic specification.json: end.row_chain.0",
+      "status": "derived",
+      "anchors": {
+        "start": [
+          1770,
+          600
+        ],
+        "end": [
+          1770,
+          660
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "end.row_chain.1",
+      "handle": "163",
+      "expected": 160.0,
+      "source": "Synthetic specification.json: end.row_chain.1",
+      "status": "derived",
+      "anchors": {
+        "start": [
+          1770,
+          660
+        ],
+        "end": [
+          1770,
+          820
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "end.row_chain.2",
+      "handle": "172",
+      "expected": 160.0,
+      "source": "Synthetic specification.json: end.row_chain.2",
+      "status": "derived",
+      "anchors": {
+        "start": [
+          1770,
+          820
+        ],
+        "end": [
+          1770,
+          980
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "end.row_chain.3",
+      "handle": "181",
+      "expected": 160.0,
+      "source": "Synthetic specification.json: end.row_chain.3",
+      "status": "derived",
+      "anchors": {
+        "start": [
+          1770,
+          980
+        ],
+        "end": [
+          1770,
+          1140
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "end.row_chain.4",
+      "handle": "190",
+      "expected": 60.0,
+      "source": "Synthetic specification.json: end.row_chain.4",
+      "status": "derived",
+      "anchors": {
+        "start": [
+          1770,
+          1140
+        ],
+        "end": [
+          1770,
+          1200
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "end.hole_diameter",
+      "handle": "19F",
+      "expected": 26.0,
+      "source": "specification.json end_plate.hole_diameter",
+      "status": "source",
+      "anchors": null,
+      "tolerance": 1e-06
+    }
+  ],
+  "features": [
+    {
+      "id": "base.hole_radii",
+      "type": "circle_radius",
+      "handles": [
+        "AC",
+        "AF",
+        "B2",
+        "B5"
+      ],
+      "expected": 15.0,
+      "tolerance": 1e-06
+    },
+    {
+      "id": "base.hole_count",
+      "type": "count",
+      "query": "CIRCLE[layer==\"BASE_HOLES\"]",
+      "expected": 4
+    },
+    {
+      "id": "end.hole_radii",
+      "type": "circle_radius",
+      "handles": [
+        "107",
+        "109",
+        "10B",
+        "10D",
+        "110",
+        "112",
+        "114",
+        "116"
+      ],
+      "expected": 13.0,
+      "tolerance": 1e-06
+    },
+    {
+      "id": "end.hole_count",
+      "type": "count",
+      "query": "CIRCLE[layer==\"END_HOLES\"]",
+      "expected": 8
+    }
+  ],
+  "plot": {
+    "layout": "S03",
+    "paper_width": 594.0,
+    "paper_height": 420.0,
+    "scale": 4.0,
+    "view_center": [
+      1188.0,
+      840.0
+    ],
+    "viewport_handle": "A7"
+  }
+}

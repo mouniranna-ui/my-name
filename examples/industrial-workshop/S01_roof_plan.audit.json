@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "issues": [],
+  "audit_errors": 0,
+  "audit_fixes": 0,
+  "native_dimensions": 8,
+  "measurements": [
+    {
+      "id": "grid.bay.1",
+      "measured": 6000.0,
+      "expected": 6000.0
+    },
+    {
+      "id": "grid.bay.2",
+      "measured": 6000.0,
+      "expected": 6000.0
+    },
+    {
+      "id": "grid.bay.3",
+      "measured": 6000.0,
+      "expected": 6000.0
+    },
+    {
+      "id": "grid.bay.4",
+      "measured": 6000.0,
+      "expected": 6000.0
+    },
+    {
+      "id": "grid.bay.5",
+      "measured": 6000.0,
+      "expected": 6000.0
+    },
+    {
+      "id": "grid.bay.6",
+      "measured": 6000.0,
+      "expected": 6000.0
+    },
+    {
+      "id": "grid.length",
+      "measured": 36000.0,
+      "expected": 36000.0
+    },
+    {
+      "id": "grid.span",
+      "measured": 23999.999999999996,
+      "expected": 24000.0
+    }
+  ],
+  "feature_checks": [],
+  "source_fidelity": "requires visual source-and-anchor review",
+  "native_autocad_test": "not performed by this helper"
+}

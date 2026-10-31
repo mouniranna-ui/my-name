@@ -1,7 +1,11 @@
-Photo to AutoCAD 1.1.0 adds direct ChatGPT use without a local skill installation: an illustrated quick start, a copyable prompt and one TXT attachment containing the actual workflow, references, dependency list and CAD helper code.
+# TSBECM 202 2.0.0
 
-The plugin package now includes review prompts, release notes and Arabic/French listing translations. Documentation explains the supported routes, support and observed data flow, and distinguishes a downloadable package from a published ChatGPT directory listing.
+This release renames the project and plugin to TSBECM 202, consolidates the documentation in English and adds a coordinated industrial workshop drafting showcase.
 
-Choose the source ZIP for all documentation and tools, the skill ZIP for manual skill installation, or the plugin ZIP for supported ingestion. SHA256SUMS.txt verifies download bytes. Existing 1.0.0 archives remain available.
+The new documentation includes a platform selector, detailed ChatGPT/Codex/Gemini setup, a complete drawing workflow, verification evidence and troubleshooting. The ChatGPT TXT attachment includes the actual skill, references and CAD helper source.
 
-The public directory submission is not yet complete. Publisher identity, country/commerce choices, policy decisions and applicable portal verification remain. No public listing URL or account installation is claimed. Actual CAD file creation requires image access and code execution. DWG requires a real converter; geometry helpers are unchanged.
+The workshop is a synthetic 24 m × 36 m study with a roof plan, elevations and plate patterns. It includes editable DXF, PDF sheets, source inputs, native dimensions and reproducible numerical checks. It is not a client project or a structural design.
+
+The technical skill name remains `draft-cad-from-images`. The portable plugin directory and package name are now `tsbecm-202`. Older Photo to AutoCAD packages remain historical versions.
+
+The public ChatGPT directory listing is still not submitted or published. Publisher details and the applicable official review process remain separate from GitHub distribution.
