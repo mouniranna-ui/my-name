@@ -1,4 +1,4 @@
-TSBECM 202 — CHATGPT ATTACHMENT — 2.1.1
+TSBECM 202 — CHATGPT ATTACHMENT — 2.1.2
 
 HOW TO USE
 Open https://chatgpt.com/ and attach this text file plus your drawing images.

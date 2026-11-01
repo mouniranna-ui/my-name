@@ -1,7 +1,7 @@
-# TSBECM 202 2.1.1
+# TSBECM 202 2.1.2
 
-This metadata release records the creator's confirmed choices: publisher-selected name **owen a**, a **free** workflow without payments or purchases, and availability in **all supported countries**. The plugin manifest contains the author/developer name, an explicit false commerce declaration and an empty country allowlist meaning no publisher country restrictions.
+This release adds English privacy and terms pages and includes all four listing URLs in the plugin manifest. The privacy policy reflects the creator's confirmation that no separate external storage is used for user data. It distinguishes host-managed files from voluntary public GitHub support information. The terms preserve the existing MIT licence, free use and established drafting scope.
 
-Publisher identity verification remains pending. The supplied name is not proof of verification, and platform availability rules still apply. The service's free status does not include third-party platform plans or AutoCAD licences.
+The publisher-selected name remains **owen a**, commerce is disabled, and country targeting remains **all supported countries**. Host access and third-party software charges are separate.
 
-The drafting skill, Python helpers, GPT compatibility kit and public examples are unchanged. Account-plugin saving, GPT creation/editing and public-directory submission/publication are still not completed. Outstanding policy decisions and required portal checks are tracked in PLUGIN_PUBLICATION.md.
+The package and listing materials are prepared. Publisher verification, saved-draft validation, required attestations, review and publication remain incomplete. No public plugin or GPT listing is claimed. CAD behavior and the compatibility kit are unchanged.

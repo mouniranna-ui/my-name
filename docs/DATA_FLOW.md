@@ -13,4 +13,4 @@ These notes describe the distributed code. They are **not a privacy policy or te
 
 The repository contains no hosted drawing-processing service, telemetry endpoint, payment integration or separate user database. Its installer copies local files and its CAD helpers create or inspect local files. The chat host may execute additional actions to fulfil a user's request; these notes do not describe or control that host's storage, training, retention or sharing policies.
 
-A future published policy must state the selected publisher's actual practices, including support data handling, retention/deletion decisions and any additional services introduced before publication. Those facts require publisher confirmation.
+The publisher, **owen a**, confirmed that there is no separate external storage for user data. The [privacy policy](PRIVACY.md) describes that practice, the host's separate role and public GitHub support. [Terms of use](TERMS.md) describe the free workflow and existing MIT licence. These implementation notes do not assert a fixed retention or deletion policy for another service.

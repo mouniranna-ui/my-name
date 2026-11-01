@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "tsbecm-202",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Convert technical drawing images into editable, dimensioned CAD with checked PDF previews.",
   "keywords": [
     "cad",
@@ -28,7 +28,9 @@
         "composerIcon": "./skills/draft-cad-from-images/assets/photo-to-autocad.png",
         "websiteURL": "https://github.com/mouniranna-ui/my-name/tree/photo-to-autocad",
         "supportURL": "https://github.com/mouniranna-ui/my-name/blob/photo-to-autocad/docs/SUPPORT.md",
-        "developerName": "owen a"
+        "developerName": "owen a",
+        "privacyPolicyURL": "https://github.com/mouniranna-ui/my-name/blob/photo-to-autocad/docs/PRIVACY.md",
+        "termsOfServiceURL": "https://github.com/mouniranna-ui/my-name/blob/photo-to-autocad/docs/TERMS.md"
       },
       "review": {
         "prompts": [
@@ -40,7 +42,7 @@
         "commerce_description": "Free drafting workflow. No payments, purchases, subscriptions or checkout are offered by this plugin. Host-platform access and third-party software remain subject to their own terms."
       },
       "publication": {
-        "release_notes": "Records publisher-selected name owen a, free use without commerce, and availability in all supported countries. No changes to CAD reconstruction behavior. Publisher verification and public directory review remain pending.",
+        "release_notes": "Adds English privacy and terms pages based on the confirmed absence of publisher external data storage, and links all four public listing pages. Preserves publisher owen a, free use and all supported countries. Public identity verification and directory review remain pending.",
         "countries": []
       }
     }

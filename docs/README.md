@@ -26,4 +26,4 @@ Start with the guide matching your platform, then follow the drawing workflow. E
 
 ## Project information
 
-[Plugin publication](PLUGIN_PUBLICATION.md) · [Support](SUPPORT.md) · [Observed data flow](DATA_FLOW.md) · [Official references](SOURCES.md) · [Release notes](RELEASE_NOTES.md)
+[Plugin publication](PLUGIN_PUBLICATION.md) · [Support](SUPPORT.md) · [Privacy policy](PRIVACY.md) · [Terms of use](TERMS.md) · [Observed data flow](DATA_FLOW.md) · [Official references](SOURCES.md) · [Release notes](RELEASE_NOTES.md)

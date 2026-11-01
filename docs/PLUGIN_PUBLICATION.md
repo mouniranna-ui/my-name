@@ -2,7 +2,7 @@
 
 [Project home](../README.md) · [Use in ChatGPT without installation](CHATGPT_START.md)
 
-Updated: **2026-10-31**, package **2.1.1**.
+Updated: **2026-11-01**, package **2.1.2**.
 
 | Route | Current status |
 | --- | --- |
@@ -12,7 +12,7 @@ Updated: **2026-10-31**, package **2.1.1**.
 | Account installation through Plugin Creator | Not completed in this workflow; the account creation tool was unavailable |
 | Public ChatGPT Plugins Directory | Not submitted or published; no verified listing URL exists |
 
-**[Download the plugin package](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-plugin-2.1.1.zip)**. This is an implementation package, not a completed public submission. Downloading it does not install it into a ChatGPT account.
+**[Download the plugin package](https://raw.githubusercontent.com/mouniranna-ui/my-name/photo-to-autocad/downloads/tsbecm-202-plugin-2.1.2.zip)**. This is an implementation package, not a completed public submission. Downloading it does not install it into a ChatGPT account.
 
 For account creation, use the [step-by-step Plugin Creator guide](INSTALL_CHATGPT.md#save-the-plugin-inside-chatgpt) and [prepared creation request](../prompts/create-chatgpt-plugin.txt). For an existing editable GPT, use the separate [GPT compatibility kit](CUSTOM_GPT.md).
 
@@ -36,24 +36,38 @@ The creator supplied these choices on **2026-10-31**:
 | Publisher-selected name | **owen a** | `author.name` and `extensions.com.openai.interface.developerName` |
 | Price / commerce | **Free; no payments or purchases** | `extensions.com.openai.review.commerce: false` |
 | Country targeting | **All supported countries** | `extensions.com.openai.publication.countries: []` |
+| Publisher storage | **No separate external storage of user data** | [Privacy policy](PRIVACY.md) |
 
 The empty country list deliberately applies no publisher country restriction. It does not bypass OpenAI regional availability or account rules. Free refers to this project; access to a host platform or third-party software is governed separately.
 
 The name is publisher-supplied, **not a verified identity claim**. The selected developer identity still needs to be verified in the publication portal, and the saved listing must show the intended identity. The package cannot override a portal-verified publisher name.
 
-## Remaining preparation and portal checks
+## Listing pages and package readiness
 
-The public project page now identifies **owen a**, and [support instructions](SUPPORT.md) are available. Publisher-approved privacy coverage and applicable terms still need to be resolved from confirmed practices. [Observed data flow](DATA_FLOW.md) records the implementation facts; it is not a privacy policy. No legal commitments, retention periods or verified identity have been invented.
+All four listing pages are supplied in the package metadata:
 
-Plugin Creator's preparation workflow asks for all four listing pages. Current public documentation distinguishes skills-only metadata validation from requirements for an attached MCP app. This package is skills-only. Use the actual portal findings for required fields while completing publisher decisions; a schema accepting a ZIP does not establish public approval.
+| Listing field | Public page |
+| --- | --- |
+| `websiteURL` | [Project home and publisher](../README.md) |
+| `supportURL` | [Support](SUPPORT.md) |
+| `privacyPolicyURL` | [Privacy policy](PRIVACY.md) |
+| `termsOfServiceURL` | [Terms of use](TERMS.md) |
 
-Pending states: account installation, publisher verification, any required policy decisions and attestations, draft upload, applicable review, and public release. There is no verified public listing or saved GPT URL. Do not ask the creator again for the publisher name, price or countries unless they request a change.
+The privacy policy reflects the creator's confirmation of no separate external storage. It distinguishes private drawings processed in the chosen host from information voluntarily posted to public GitHub support. The terms preserve the existing MIT licence, free use and established drafting limits. They add no subscription, guaranteed response time, jurisdiction or arbitration terms.
+
+The portable source, listing metadata, icon, review prompts, country selection and policy pages are prepared. Local package checks do not replace validation in the publication portal. A skills-only package needs no MCP server connection, MCP review cases, recorded MCP demo or reviewer account credentials.
+
+## Remaining portal steps
+
+The publisher identity has not been verified in this workflow. No draft has been uploaded or submitted, and no directory release has been approved or published. There is no verified public plugin or saved GPT link. Account-plugin creation is also uncompleted because that capability was unavailable.
+
+Select the intended verified developer identity in the official portal, upload the package, inspect the saved metadata and skill inventory, resolve required checks, complete the publisher's legal/policy attestations, then submit for review. Only an approved release can be published to the public directory. Country targeting remains all supported countries; the project remains free.
 
 ## Final publication process
 
-After outstanding policy decisions and required pages are resolved:
+Use the prepared package in the official publication portal:
 
-1. Set the confirmed metadata in a separate public upload copy and rebuild the plugin ZIP. Keep the plugin name and skill identity unchanged.
+1. Use the current versioned plugin ZIP. Keep the technical plugin name `tsbecm-202` and skill identity unchanged; preserve public upload separation from any later private app bindings.
 2. Inspect the ZIP: root `plugin.json`, contained skill assets, no secrets, no root `.app.json` or private app bindings.
 3. In the official developer portal, select the intended organization/project and verified publisher. Upload the ZIP as a draft and inspect the imported metadata and skill findings.
 4. Resolve required checks. The authorized publisher completes identity verification and legal/policy attestations. A skills-only plugin does not need MCP test cases, reviewer login credentials or a demo recording.

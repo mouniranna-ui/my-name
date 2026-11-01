@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.1.2 — 2026-11-01
+
+- Publish English privacy and terms pages based on the creator's confirmed data practices.
+- Add all four public listing page URLs to the portable manifest.
+- Preserve free use, publisher owen a, all-country targeting and the existing MIT licence.
+- Record the remaining identity, portal validation, attestation and review steps accurately.
+
 ## 2.1.1 — 2026-10-31
 
 - Record the publisher-selected name exactly as owen a.
