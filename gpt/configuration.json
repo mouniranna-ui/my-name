@@ -1,0 +1,27 @@
+{
+  "format": "tsbecm-202-manual-gpt-configuration-v1",
+  "name": "TSBECM 202",
+  "description": "Reconstruct technical drawings as editable CAD with native dimensions, organized layers, checked PDF previews and explicit source uncertainties.",
+  "instructions_file": "instructions.txt",
+  "knowledge_files": ["TSBECM-202-ChatGPT.txt"],
+  "icon_file": "icon.png",
+  "conversation_starters": [
+    "Redraw my technical drawing as editable DXF with native dimensions and a checked PDF.",
+    "Read all dimensions in this drawing and identify missing or conflicting measurements.",
+    "Check my CAD drawing against the source, including hole positions, slopes and annotations.",
+    "Create an educational drafting example from my dimensioned brief and show the verification results."
+  ],
+  "capabilities": {
+    "code_interpreter_and_data_analysis": "required for generated DXF and PDF files",
+    "web_search": "recommended for authoritative profile references when needed",
+    "image_generation": "off; not used for precise technical drawings",
+    "canvas": "optional",
+    "apps": "none required",
+    "actions": "none; no hosted conversion API is provided"
+  },
+  "recommended_model": "Leave unset or choose an available model supporting images and code execution after preview testing.",
+  "preview_tests_file": "preview-tests.json",
+  "availability_checked_on": "2026-10-31",
+  "status": "Configuration files only; no GPT created, updated or published by this package.",
+  "availability": "Use only for an existing editable GPT or a workspace currently eligible for GPT creation. New creation and publishing are unavailable on personal ChatGPT accounts."
+}

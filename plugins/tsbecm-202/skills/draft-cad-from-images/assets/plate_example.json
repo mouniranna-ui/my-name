@@ -1,0 +1,10 @@
+{
+  "title": "Synthetic plate example",
+  "units": "mm",
+  "width": 120,
+  "height": 240,
+  "hole_diameter": 12,
+  "column_centres": [30, 90],
+  "row_centres": [30, 90, 150, 210],
+  "note": "Synthetic training data. Do not reuse these values for user drawings."
+}

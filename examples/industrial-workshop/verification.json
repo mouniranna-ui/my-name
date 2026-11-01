@@ -1,0 +1,33 @@
+{
+  "project": "TSBECM 202 - Industrial Workshop",
+  "source_type": "synthetic specification, not a photograph",
+  "sheets": [
+    {
+      "sheet": "S01_roof_plan",
+      "native_dimensions": 8,
+      "audit_errors": 0,
+      "audit_fixes": 0,
+      "passed": true
+    },
+    {
+      "sheet": "S02_elevations",
+      "native_dimensions": 11,
+      "audit_errors": 0,
+      "audit_fixes": 0,
+      "passed": true
+    },
+    {
+      "sheet": "S03_plate_details",
+      "native_dimensions": 15,
+      "audit_errors": 0,
+      "audit_fixes": 0,
+      "passed": true
+    }
+  ],
+  "native_dimensions": 34,
+  "hole_positions_independently_checked": 12,
+  "bay_chain_checked": true,
+  "ridge_height_checked": 8300,
+  "native_autocad_test": "not performed",
+  "structural_design": "not performed"
+}

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="510" viewBox="0 0 1440 510" role="img" aria-label="TSBECM 202">
+<rect width="1440" height="510" rx="28" fill="#101a2c"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="60" y="76" fill="#ffffff" font-size="35" font-weight="700">TSBECM 202</text>
+<text x="60" y="118" fill="#bdcce0" font-size="21">An image-based drafting workflow with explicit evidence and editable output.</text>
+<rect x="60" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="100" cy="211" r="20" fill="#4ce2ba"/>
+<text x="100" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">1</text>
+<text x="85" y="264" fill="#ffffff" font-size="23" font-weight="700">Read the drawing</text>
+<text x="85" y="303" fill="#d4e0ed" font-size="18">Inspect every view</text>
+<text x="85" y="332" fill="#d4e0ed" font-size="18">Read dimensions upright</text>
+<text x="85" y="361" fill="#d4e0ed" font-size="18">Record unclear features</text>
+<path d="M369 290 h22 m-7 -7 l7 7 -7 7" fill="none" stroke="#4ce2ba" stroke-width="3"/>
+<rect x="400" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="440" cy="211" r="20" fill="#4ce2ba"/>
+<text x="440" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">2</text>
+<text x="425" y="264" fill="#ffffff" font-size="23" font-weight="700">Build native CAD</text>
+<text x="425" y="303" fill="#d4e0ed" font-size="18">Draw at full size</text>
+<text x="425" y="332" fill="#d4e0ed" font-size="18">Use layers and dimensions</text>
+<text x="425" y="361" fill="#d4e0ed" font-size="18">Keep measured values</text>
+<path d="M709 290 h22 m-7 -7 l7 7 -7 7" fill="none" stroke="#4ce2ba" stroke-width="3"/>
+<rect x="740" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="780" cy="211" r="20" fill="#4ce2ba"/>
+<text x="780" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">3</text>
+<text x="765" y="264" fill="#ffffff" font-size="23" font-weight="700">Check the result</text>
+<text x="765" y="303" fill="#d4e0ed" font-size="18">Reopen and audit DXF</text>
+<text x="765" y="332" fill="#d4e0ed" font-size="18">Compare source anchors</text>
+<text x="765" y="361" fill="#d4e0ed" font-size="18">Inspect PDF visually</text>
+<path d="M1049 290 h22 m-7 -7 l7 7 -7 7" fill="none" stroke="#4ce2ba" stroke-width="3"/>
+<rect x="1080" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="1120" cy="211" r="20" fill="#4ce2ba"/>
+<text x="1120" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">4</text>
+<text x="1105" y="264" fill="#ffffff" font-size="23" font-weight="700">Deliver the files</text>
+<text x="1105" y="303" fill="#d4e0ed" font-size="18">Editable DXF</text>
+<text x="1105" y="332" fill="#d4e0ed" font-size="18">Scaled PDF preview</text>
+<text x="1105" y="361" fill="#d4e0ed" font-size="18">Source and uncertainty note</text>
+<text x="60" y="465" fill="#a9bfd5" font-size="18">An image without a dimension does not provide a confirmed measurement. DWG requires a real CAD converter.</text>
+</g></svg>

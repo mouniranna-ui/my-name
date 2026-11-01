@@ -1,0 +1,20 @@
+{
+  "name": "tsbecm-202",
+  "interface": {
+    "displayName": "TSBECM 202"
+  },
+  "plugins": [
+    {
+      "name": "tsbecm-202",
+      "source": {
+        "source": "local",
+        "path": "./plugins/tsbecm-202"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

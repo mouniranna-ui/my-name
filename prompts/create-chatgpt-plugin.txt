@@ -1,0 +1,7 @@
+Create a private ChatGPT plugin named TSBECM 202 from the attached tsbecm-202-plugin ZIP.
+
+Use the supplied package as the source. Preserve its technical plugin name tsbecm-202, the draft-cad-from-images skill, Python helpers, references, icon and English listing. The package reconstructs technical drawing images as editable 2D DXF with native dimensions, layers, labels, a scaled PDF and a source/uncertainty note. It needs the host's image, Python and file-output capabilities; it has no MCP server or separate login.
+
+Check for an existing TSBECM 202 plugin I own before creating one. Update only the matching plugin when its identity is verified; do not create a duplicate or alter another plugin. Validate the archive, save it to my account using the available account-plugin creation/update capability, then return the actual saved plugin link and verify that draft-cad-from-images is present. If the save capability is unavailable, say that saving remains pending; a prepared ZIP is not an installed plugin.
+
+After saving, help run a fresh conversation test with a synthetic dimensioned plate and inspect the returned CAD/PDF files. Keep account installation, workspace sharing and public-directory publication as separate actions. Do not claim a public listing or invent publisher identity, country targeting, legal statements, payment details or an approved review state.

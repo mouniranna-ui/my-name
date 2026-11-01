@@ -1,0 +1,92 @@
+{
+  "passed": true,
+  "issues": [],
+  "audit_errors": 0,
+  "audit_fixes": 0,
+  "native_dimensions": 15,
+  "measurements": [
+    {
+      "id": "base.width",
+      "measured": 500.0,
+      "expected": 500.0
+    },
+    {
+      "id": "base.height",
+      "measured": 500.0,
+      "expected": 500.0
+    },
+    {
+      "id": "base.edge",
+      "measured": 90.0,
+      "expected": 90.0
+    },
+    {
+      "id": "base.pitch",
+      "measured": 320.0,
+      "expected": 320.0
+    },
+    {
+      "id": "base.hole_diameter",
+      "measured": 29.999999999999922,
+      "expected": 30.0
+    },
+    {
+      "id": "end.width",
+      "measured": 320.0,
+      "expected": 320.0
+    },
+    {
+      "id": "end.height",
+      "measured": 599.9999999999999,
+      "expected": 600.0
+    },
+    {
+      "id": "end.column_pitch",
+      "measured": 180.0,
+      "expected": 180.0
+    },
+    {
+      "id": "end.side_edge",
+      "measured": 70.0,
+      "expected": 70.0
+    },
+    {
+      "id": "end.row_chain.0",
+      "measured": 60.0,
+      "expected": 60.0
+    },
+    {
+      "id": "end.row_chain.1",
+      "measured": 160.0,
+      "expected": 160.0
+    },
+    {
+      "id": "end.row_chain.2",
+      "measured": 160.0,
+      "expected": 160.0
+    },
+    {
+      "id": "end.row_chain.3",
+      "measured": 159.9999999999999,
+      "expected": 160.0
+    },
+    {
+      "id": "end.row_chain.4",
+      "measured": 60.0,
+      "expected": 60.0
+    },
+    {
+      "id": "end.hole_diameter",
+      "measured": 25.99999999999986,
+      "expected": 26.0
+    }
+  ],
+  "feature_checks": [
+    "base.hole_radii",
+    "base.hole_count",
+    "end.hole_radii",
+    "end.hole_count"
+  ],
+  "source_fidelity": "requires visual source-and-anchor review",
+  "native_autocad_test": "not performed by this helper"
+}

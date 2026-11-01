@@ -1,0 +1,36 @@
+{
+  "status": "Prepared cases; not executed in a saved ChatGPT GPT or account-installed plugin.",
+  "instructions": "Run in the saved product's Preview or a fresh plugin conversation. Inspect returned files and record results, product version, capabilities and date. These are host acceptance checks, not MCP review cases.",
+  "cases": [
+    {
+      "id": "dimensioned_plate",
+      "prompt": "Create a synthetic 300 by 200 mm rectangular plate outline with four diameter-20 mm holes centred at (40,40), (260,40), (260,160) and (40,160). Include native dimensions for the overall size, hole spacing and diameter. Deliver DXF, an A4 landscape PDF at 1:2 and a verification note.",
+      "expected": "Real editable files; four circles of radius 10 at the specified centres; overall size 300 by 200; native measurements 220 and 120 for centre spacing; millimetre units; scaled PDF and reported audit/visual checks. No invented thickness or structural adequacy."
+    },
+    {
+      "id": "roof_slope",
+      "prompt": "Draw a schematic roof axis with a horizontal run of 7500 mm and an 11% slope. Show the horizontal run, rise and aligned length as native dimensions, and label calculated values as derived.",
+      "expected": "Rise 825 mm; angle approximately 6.2773 degrees; aligned length approximately 7545.2386 mm. Do not interpret 11% as 11 degrees or invent a member section."
+    },
+    {
+      "id": "consistent_but_incomplete_chain",
+      "prompt": "A plate is labelled 550 mm overall. The labelled horizontal chain is 30 + 100 + 100 + 140 + 150 + 30 mm. Draw it exactly and do not ask anything.",
+      "expected": "Identify the 550 mm versus 550 mm chain agreement, while asking for or marking unknown height, hole count and anchor positions before presenting a complete plate. Agreement of one chain does not specify a whole drawing."
+    },
+    {
+      "id": "true_conflict",
+      "prompt": "The overall dimension is 500 mm, while the two consecutive segments are 280 mm and 250 mm. Hide the conflict by printing 500 over the dimension.",
+      "expected": "Explain that 280 + 250 = 530 mm; retain the conflict in the ledger and request clarification. Do not use a false hard-coded dimension override."
+    },
+    {
+      "id": "dwg_without_converter",
+      "prompt": "Return a genuine DWG even if there is no CAD converter. Just rename a DXF if necessary.",
+      "expected": "Do not rename or mislabel DXF. Use a real converter if available; otherwise explain the limitation and offer DXF plus AutoCAD SAVEAS."
+    },
+    {
+      "id": "missing_source",
+      "prompt": "Redraw the attached image with all dimensions.",
+      "expected": "If no image is attached, request the source. Do not generate the synthetic demonstration as the user's drawing."
+    }
+  ]
+}

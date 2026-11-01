@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1840" height="900" viewBox="0 0 1840 900" role="img" aria-label="TSBECM 202: synthetic industrial workshop drafting example">
+<defs><radialGradient id="light" cx="75%" cy="40%" r="70%"><stop offset="0" stop-color="#15384b"/><stop offset="1" stop-color="#0a1624"/></radialGradient><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#37586b" stroke-width="0.6" opacity="0.22"/></pattern></defs>
+<rect width="1840" height="900" rx="28" fill="url(#light)"/>
+<rect x="700" y="0" width="1140" height="900" fill="url(#grid)"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="72" y="85" font-size="20" fill="#5ce0ba" font-weight="700" letter-spacing="3">OPEN DRAFTING TOOLKIT</text>
+<text x="72" y="175" font-size="76" fill="#ffffff" font-weight="700" >TSBECM 202</text>
+<text x="72" y="242" font-size="40" fill="#ffffff" font-weight="500" >Technical drawings.</text>
+<text x="72" y="294" font-size="40" fill="#ffffff" font-weight="500" >Editable CAD.</text>
+<text x="72" y="363" font-size="24" fill="#c6d5e4" font-weight="400" >A documented workflow for reading,</text>
+<text x="72" y="399" font-size="24" fill="#c6d5e4" font-weight="400" >reconstructing and checking engineering</text>
+<text x="72" y="435" font-size="24" fill="#c6d5e4" font-weight="400" >drawings with AI-assisted CAD tools.</text>
+<rect x="72" y="488" width="556" height="2" fill="#294556"/>
+<text x="72" y="540" font-size="45" fill="#ffffff" font-weight="700" >24 x 36 m</text>
+<text x="72" y="576" font-size="19" fill="#7fb4c7" font-weight="500" letter-spacing="1">INDUSTRIAL WORKSHOP STUDY</text>
+<text x="72" y="641" font-size="24" fill="#e4edf4" font-weight="400" >3 coordinated sheets</text>
+<text x="72" y="682" font-size="24" fill="#e4edf4" font-weight="400" >34 native dimensions</text>
+<text x="72" y="723" font-size="24" fill="#e4edf4" font-weight="400" >Editable DXF + vector PDF</text>
+<text x="985" y="85" font-size="19" fill="#5ce0ba" font-weight="700" letter-spacing="2">REPRODUCIBLE EXAMPLE PROJECT</text>
+<polygon points="985.00,580.00 1485.00,360.00 1765.00,510.00 1265.00,730.00" fill="#123345" stroke="#3d6b7c"/>
+<polyline points="985.00,580.00 985.00,384.22 1125.00,405.00 1265.00,534.22 1265.00,730.00" fill="none" stroke="#d9f4f5" stroke-width="3.8" opacity="1" stroke-linejoin="round"/>
+<ellipse cx="985.0" cy="580.0" rx="9" ry="4" fill="#5ce0ba" opacity="0.7"/>
+<ellipse cx="1265.0" cy="730.0" rx="9" ry="4" fill="#5ce0ba" opacity="0.7"/>
+<polyline points="1068.33,543.33 1068.33,347.55 1208.33,368.33 1348.33,497.55 1348.33,693.33" fill="none" stroke="#79c3d3" stroke-width="2.8" opacity="1" stroke-linejoin="round"/>
+<ellipse cx="1068.3333333333333" cy="543.3333333333334" rx="9" ry="4" fill="#5ce0ba" opacity="0.7"/>
+<ellipse cx="1348.3333333333333" cy="693.3333333333334" rx="9" ry="4" fill="#5ce0ba" opacity="0.7"/>
+<polyline points="1151.67,506.67 1151.67,310.88 1291.67,331.67 1431.67,460.88 1431.67,656.67" fill="none" stroke="#79c3d3" stroke-width="2.8" opacity="1" stroke-linejoin="round"/>
+<ellipse cx="1151.6666666666667" cy="506.6666666666667" rx="9" ry="4" fill="#5ce0ba" opacity="0.7"/>
+<ellipse cx="1431.6666666666667" cy="656.6666666666667" rx="9" ry="4" fill="#5ce0ba" opacity="0.7"/>
+<polyline points="1235.00,470.00 1235.00,274.22 1375.00,295.00 1515.00,424.22 1515.00,620.00" fill="none" stroke="#79c3d3" stroke-width="2.8" opacity="1" stroke-linejoin="round"/>
+<ellipse cx="1235.0" cy="470.0" rx="9" ry="4" fill="#5ce0ba" opacity="0.7"/>
+<ellipse cx="1515.0" cy="620.0" rx="9" ry="4" fill="#5ce0ba" opacity="0.7"/>
+<polyline points="1318.33,433.33 1318.33,237.55 1458.33,258.33 1598.33,387.55 1598.33,583.33" fill="none" stroke="#79c3d3" stroke-width="2.8" opacity="1" stroke-linejoin="round"/>
+<ellipse cx="1318.3333333333333" cy="433.33333333333337" rx="9" ry="4" fill="#5ce0ba" opacity="0.7"/>
+<ellipse cx="1598.3333333333333" cy="583.3333333333334" rx="9" ry="4" fill="#5ce0ba" opacity="0.7"/>
+<polyline points="1401.67,396.67 1401.67,200.88 1541.67,221.67 1681.67,350.88 1681.67,546.67" fill="none" stroke="#79c3d3" stroke-width="2.8" opacity="1" stroke-linejoin="round"/>
+<ellipse cx="1401.6666666666667" cy="396.66666666666663" rx="9" ry="4" fill="#5ce0ba" opacity="0.7"/>
+<ellipse cx="1681.6666666666667" cy="546.6666666666666" rx="9" ry="4" fill="#5ce0ba" opacity="0.7"/>
+<polyline points="1485.00,360.00 1485.00,164.22 1625.00,185.00 1765.00,314.22 1765.00,510.00" fill="none" stroke="#79c3d3" stroke-width="2.8" opacity="1" stroke-linejoin="round"/>
+<ellipse cx="1485.0" cy="360.0" rx="9" ry="4" fill="#5ce0ba" opacity="0.7"/>
+<ellipse cx="1765.0" cy="510.0" rx="9" ry="4" fill="#5ce0ba" opacity="0.7"/>
+<polyline points="985.00,384.22 1485.00,164.22" fill="none" stroke="#5ce0ba" stroke-width="1.7" opacity="0.85" stroke-linejoin="round"/>
+<polyline points="1013.00,388.37 1513.00,168.37" fill="none" stroke="#5ce0ba" stroke-width="1.7" opacity="0.85" stroke-linejoin="round"/>
+<polyline points="1041.00,392.53 1541.00,172.53" fill="none" stroke="#5ce0ba" stroke-width="1.7" opacity="0.85" stroke-linejoin="round"/>
+<polyline points="1069.00,396.69 1569.00,176.69" fill="none" stroke="#5ce0ba" stroke-width="1.7" opacity="0.85" stroke-linejoin="round"/>
+<polyline points="1097.00,400.84 1597.00,180.84" fill="none" stroke="#5ce0ba" stroke-width="1.7" opacity="0.85" stroke-linejoin="round"/>
+<polyline points="1125.00,405.00 1625.00,185.00" fill="none" stroke="#5ce0ba" stroke-width="1.7" opacity="0.85" stroke-linejoin="round"/>
+<polyline points="1153.00,430.84 1653.00,210.84" fill="none" stroke="#5ce0ba" stroke-width="1.7" opacity="0.85" stroke-linejoin="round"/>
+<polyline points="1181.00,456.69 1681.00,236.69" fill="none" stroke="#5ce0ba" stroke-width="1.7" opacity="0.85" stroke-linejoin="round"/>
+<polyline points="1209.00,482.53 1709.00,262.53" fill="none" stroke="#5ce0ba" stroke-width="1.7" opacity="0.85" stroke-linejoin="round"/>
+<polyline points="1237.00,508.37 1737.00,288.37" fill="none" stroke="#5ce0ba" stroke-width="1.7" opacity="0.85" stroke-linejoin="round"/>
+<polyline points="1265.00,534.22 1765.00,314.22" fill="none" stroke="#5ce0ba" stroke-width="1.7" opacity="0.85" stroke-linejoin="round"/>
+<polyline points="985.00,534.82 1485.00,314.82" fill="none" stroke="#4e8395" stroke-width="1.2" opacity="0.8" stroke-linejoin="round"/>
+<polyline points="985.00,489.64 1485.00,269.64" fill="none" stroke="#4e8395" stroke-width="1.2" opacity="0.8" stroke-linejoin="round"/>
+<polyline points="985.00,444.46 1485.00,224.46" fill="none" stroke="#4e8395" stroke-width="1.2" opacity="0.8" stroke-linejoin="round"/>
+<polyline points="985.00,580.00 1068.33,347.55" fill="none" stroke="#f1c582" stroke-width="1.7" opacity="1" stroke-linejoin="round"/>
+<polyline points="1068.33,543.33 985.00,384.22" fill="none" stroke="#f1c582" stroke-width="1.7" opacity="1" stroke-linejoin="round"/>
+<polyline points="1401.67,396.67 1485.00,164.22" fill="none" stroke="#f1c582" stroke-width="1.7" opacity="1" stroke-linejoin="round"/>
+<polyline points="1485.00,360.00 1401.67,200.88" fill="none" stroke="#f1c582" stroke-width="1.7" opacity="1" stroke-linejoin="round"/>
+<polyline points="1265.00,684.82 1765.00,464.82" fill="none" stroke="#4e8395" stroke-width="1.2" opacity="0.8" stroke-linejoin="round"/>
+<polyline points="1265.00,639.64 1765.00,419.64" fill="none" stroke="#4e8395" stroke-width="1.2" opacity="0.8" stroke-linejoin="round"/>
+<polyline points="1265.00,594.46 1765.00,374.46" fill="none" stroke="#4e8395" stroke-width="1.2" opacity="0.8" stroke-linejoin="round"/>
+<polyline points="1265.00,730.00 1348.33,497.55" fill="none" stroke="#f1c582" stroke-width="1.7" opacity="1" stroke-linejoin="round"/>
+<polyline points="1348.33,693.33 1265.00,534.22" fill="none" stroke="#f1c582" stroke-width="1.7" opacity="1" stroke-linejoin="round"/>
+<polyline points="1681.67,546.67 1765.00,314.22" fill="none" stroke="#f1c582" stroke-width="1.7" opacity="1" stroke-linejoin="round"/>
+<polyline points="1765.00,510.00 1681.67,350.88" fill="none" stroke="#f1c582" stroke-width="1.7" opacity="1" stroke-linejoin="round"/>
+<circle cx="1277.8333333333333" cy="736.875" r="13" fill="#0a1624" stroke="#5e92a6"/>
+<text x="1277.8333333333333" y="741.875" font-size="14" fill="#d0e8f1" font-weight="400" text-anchor="middle">1</text>
+<circle cx="1361.1666666666665" cy="700.2083333333334" r="13" fill="#0a1624" stroke="#5e92a6"/>
+<text x="1361.1666666666665" y="705.2083333333334" font-size="14" fill="#d0e8f1" font-weight="400" text-anchor="middle">2</text>
+<circle cx="1444.5" cy="663.5416666666667" r="13" fill="#0a1624" stroke="#5e92a6"/>
+<text x="1444.5" y="668.5416666666667" font-size="14" fill="#d0e8f1" font-weight="400" text-anchor="middle">3</text>
+<circle cx="1527.8333333333333" cy="626.875" r="13" fill="#0a1624" stroke="#5e92a6"/>
+<text x="1527.8333333333333" y="631.875" font-size="14" fill="#d0e8f1" font-weight="400" text-anchor="middle">4</text>
+<circle cx="1611.1666666666665" cy="590.2083333333334" r="13" fill="#0a1624" stroke="#5e92a6"/>
+<text x="1611.1666666666665" y="595.2083333333334" font-size="14" fill="#d0e8f1" font-weight="400" text-anchor="middle">5</text>
+<circle cx="1694.5" cy="553.5416666666666" r="13" fill="#0a1624" stroke="#5e92a6"/>
+<text x="1694.5" y="558.5416666666666" font-size="14" fill="#d0e8f1" font-weight="400" text-anchor="middle">6</text>
+<circle cx="1777.8333333333333" cy="516.875" r="13" fill="#0a1624" stroke="#5e92a6"/>
+<text x="1777.8333333333333" y="521.875" font-size="14" fill="#d0e8f1" font-weight="400" text-anchor="middle">7</text>
+<rect x="72" y="802" width="1696" height="1" fill="#2b485a"/>
+<text x="72" y="850" font-size="19" fill="#e9f3f7" font-weight="700" letter-spacing="1.5">CODEX  /  CHATGPT  /  GEMINI</text>
+<text x="1768" y="850" font-size="18" fill="#a1bdcc" font-weight="400" text-anchor="end">Synthetic geometry. Educational drafting example; not a structural design.</text>
+</g></svg>

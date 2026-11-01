@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="510" viewBox="0 0 1440 510" role="img" aria-label="CHATGPT · THREE WAYS TO USE IT">
+<rect width="1440" height="510" rx="28" fill="#101a2c"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="60" y="76" fill="#ffffff" font-size="35" font-weight="700">CHATGPT · THREE WAYS TO USE IT</text>
+<text x="60" y="118" fill="#bdcce0" font-size="21">Choose direct instructions now, a supported local setup, or the future public listing.</text>
+<rect x="60" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="100" cy="211" r="20" fill="#4ce2ba"/>
+<text x="100" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">1</text>
+<text x="85" y="264" fill="#ffffff" font-size="23" font-weight="700">Direct chat · now</text>
+<text x="85" y="303" fill="#d4e0ed" font-size="18">Open ChatGPT</text>
+<text x="85" y="332" fill="#d4e0ed" font-size="18">Add prompt or TXT + image</text>
+<text x="85" y="361" fill="#d4e0ed" font-size="18">No local skill installation</text>
+<path d="M369 290 h22 m-7 -7 l7 7 -7 7" fill="none" stroke="#4ce2ba" stroke-width="3"/>
+<rect x="400" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="440" cy="211" r="20" fill="#4ce2ba"/>
+<text x="440" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">2</text>
+<text x="425" y="264" fill="#ffffff" font-size="23" font-weight="700">Local desktop</text>
+<text x="425" y="303" fill="#d4e0ed" font-size="18">Open repository project</text>
+<text x="425" y="332" fill="#d4e0ed" font-size="18">Use local marketplace</text>
+<text x="425" y="361" fill="#d4e0ed" font-size="18">Supported setups only</text>
+<path d="M709 290 h22 m-7 -7 l7 7 -7 7" fill="none" stroke="#4ce2ba" stroke-width="3"/>
+<rect x="740" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="780" cy="211" r="20" fill="#4ce2ba"/>
+<text x="780" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">3</text>
+<text x="765" y="264" fill="#ffffff" font-size="23" font-weight="700">Public directory</text>
+<text x="765" y="303" fill="#d4e0ed" font-size="18">Plugin package is built</text>
+<text x="765" y="332" fill="#d4e0ed" font-size="18">Submission still pending</text>
+<text x="765" y="361" fill="#d4e0ed" font-size="18">No public install link yet</text>
+<path d="M1049 290 h22 m-7 -7 l7 7 -7 7" fill="none" stroke="#4ce2ba" stroke-width="3"/>
+<rect x="1080" y="170" width="300" height="240" rx="18" fill="#1e2d44" stroke="#354862"/>
+<circle cx="1120" cy="211" r="20" fill="#4ce2ba"/>
+<text x="1120" y="218" text-anchor="middle" fill="#10263b" font-size="21" font-weight="700">4</text>
+<text x="1105" y="264" fill="#ffffff" font-size="23" font-weight="700">Output requirements</text>
+<text x="1105" y="303" fill="#d4e0ed" font-size="18">Image and file access</text>
+<text x="1105" y="332" fill="#d4e0ed" font-size="18">Python execution</text>
+<text x="1105" y="361" fill="#d4e0ed" font-size="18">Editable DXF + checked PDF</text>
+<text x="60" y="465" fill="#a9bfd5" font-size="18">An uploaded TXT supplies instructions and source code. A plugin ZIP does not install itself when attached to a chat.</text>
+</g></svg>

@@ -1,0 +1,163 @@
+{
+  "schema": 1,
+  "units": 4,
+  "title": "TSBECM 202 | Roof plan and structural grid",
+  "dimensions": [
+    {
+      "id": "grid.bay.1",
+      "handle": "AF",
+      "expected": 6000.0,
+      "source": "Synthetic specification.json: grid.bay.1",
+      "status": "source",
+      "anchors": {
+        "start": [
+          9000,
+          11000
+        ],
+        "end": [
+          15000,
+          11000
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "grid.bay.2",
+      "handle": "C3",
+      "expected": 6000.0,
+      "source": "Synthetic specification.json: grid.bay.2",
+      "status": "source",
+      "anchors": {
+        "start": [
+          15000,
+          11000
+        ],
+        "end": [
+          21000,
+          11000
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "grid.bay.3",
+      "handle": "D7",
+      "expected": 6000.0,
+      "source": "Synthetic specification.json: grid.bay.3",
+      "status": "source",
+      "anchors": {
+        "start": [
+          21000,
+          11000
+        ],
+        "end": [
+          27000,
+          11000
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "grid.bay.4",
+      "handle": "EB",
+      "expected": 6000.0,
+      "source": "Synthetic specification.json: grid.bay.4",
+      "status": "source",
+      "anchors": {
+        "start": [
+          27000,
+          11000
+        ],
+        "end": [
+          33000,
+          11000
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "grid.bay.5",
+      "handle": "FF",
+      "expected": 6000.0,
+      "source": "Synthetic specification.json: grid.bay.5",
+      "status": "source",
+      "anchors": {
+        "start": [
+          33000,
+          11000
+        ],
+        "end": [
+          39000,
+          11000
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "grid.bay.6",
+      "handle": "113",
+      "expected": 6000.0,
+      "source": "Synthetic specification.json: grid.bay.6",
+      "status": "source",
+      "anchors": {
+        "start": [
+          39000,
+          11000
+        ],
+        "end": [
+          45000,
+          11000
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "grid.length",
+      "handle": "127",
+      "expected": 36000.0,
+      "source": "Synthetic specification.json: grid.length",
+      "status": "source",
+      "anchors": {
+        "start": [
+          9000,
+          11000
+        ],
+        "end": [
+          45000,
+          11000
+        ]
+      },
+      "tolerance": 1e-06
+    },
+    {
+      "id": "grid.span",
+      "handle": "136",
+      "expected": 24000.0,
+      "source": "Synthetic specification.json: grid.span",
+      "status": "source",
+      "anchors": {
+        "start": [
+          45000,
+          11000
+        ],
+        "end": [
+          45000,
+          35000
+        ]
+      },
+      "tolerance": 1e-06
+    }
+  ],
+  "features": [],
+  "plot": {
+    "layout": "S01",
+    "paper_width": 594.0,
+    "paper_height": 420.0,
+    "scale": 100.0,
+    "view_center": [
+      29700.0,
+      21000.0
+    ],
+    "viewport_handle": "A7"
+  }
+}

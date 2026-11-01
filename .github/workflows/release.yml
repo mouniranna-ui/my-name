@@ -1,0 +1,31 @@
+name: Build release downloads
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements-dev.txt
+      - name: Verify release version
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: python -c "import os,pathlib; assert os.environ['RELEASE_TAG'] == 'v' + pathlib.Path('VERSION').read_text().strip()"
+      - run: python tools/verify_repository.py
+      - run: python -m unittest discover -s tests -v
+      - run: python plugins/tsbecm-202/skills/draft-cad-from-images/scripts/test_cad_tools.py
+      - run: python tools/build_release.py
+      - name: Publish release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: gh release create "$RELEASE_TAG" dist/*.zip dist/SHA256SUMS.txt --verify-tag --title "TSBECM 202 $RELEASE_TAG" --notes-file docs/RELEASE_NOTES.md
